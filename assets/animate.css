@@ -16,6 +16,9 @@
 
 .scrollelement {
   display: inline-block;
+	position: relative;
+	animation-name: travelling;
+	animation-duration: 4s;
 }
 
 .squaretree {
@@ -40,4 +43,9 @@
   width: 100vw;
   height: 30px;
   background-color: red;
+}
+
+@keyframes travelling {
+	0% {left: -100;}
+	100% {left: 2000;}
 }

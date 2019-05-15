@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+
+  <title>Hjemmeside titel</title>
+  <meta name="description" content="Hjemmeside beskrivelse" />
+  <meta name="keywords" content="">
+  <meta name="author" content="Hjemmeside" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+
+<!-- Hurtig CSS. Brug ikke <style> til rigtige projekter -->
+<style>
+main {
+  display: inline-block;
+  width: 100%;  
+}
+.row div {
+  margin-bottom: 10px;
+}
+.row div a {
+  display: inline-block;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+</style>
+
+<main>
+
+  <!-- Divs med x / 12 kolonner i bredde -->
+  <div class="row">
+    <div class="grid-xs-4"> <a>1</a> </div>
+    <div class="grid-xs-4"> <a>2</a> </div>
+    <div class="grid-xs-4"> <a>3</a> </div>
+	<div class="grid-xs-4"> <a>4</a> </div>
+    <div class="grid-xs-4"> <a>5</a> </div>
+    <div class="grid-xs-4"> <a>6</a> </div>
+  </div>
+  
+  <!-- Bare lidt hurtig mellemrum. Brug ikke <br> til rigtige projekter -->
+  <br><br> 
+  
+  <!-- Samme som ovenfor, men i centrum af skærmen fordi de er indeni <div class="container"> -->
+  <div class="row">
+    <div class="container">
+      <div class="grid-xs-4"> <a>1</a> </div>
+      <div class="grid-xs-4"> <a>2</a> </div>
+      <div class="grid-xs-4"> <a>3</a> </div>
+	  <div class="grid-xs-4"> <a>4</a> </div>
+      <div class="grid-xs-4"> <a>5</a> </div>
+      <div class="grid-xs-4"> <a>6</a> </div>
+	</div>
+  </div>
+  
+  <br><br> 
+  
+  <!-- Samme som ovenfor, men hver div bliver mindre på desktop-størrelse skærm (lg) -->
+  <div class="row">
+    <div class="container">
+      <div class="grid-xs-4 grid-lg-2"> <a>1</a> </div>
+      <div class="grid-xs-4 grid-lg-2"> <a>2</a> </div>
+      <div class="grid-xs-4 grid-lg-2"> <a>3</a> </div>
+	  <div class="grid-xs-4 grid-lg-2"> <a>4</a> </div>
+      <div class="grid-xs-4 grid-lg-2"> <a>5</a> </div>
+      <div class="grid-xs-4 grid-lg-2"> <a>6</a> </div>
+	</div>
+  </div>
+
+</main>
+
+</body>
+</html>

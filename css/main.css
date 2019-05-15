@@ -74,13 +74,13 @@ nav li .btn {
 	display: block;
 	box-sizing: border-box;
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #F7F7F7;
 	font-size: 15px;
-	border: 1px solid #FFFFFF;
+	border: 1px solid #F7F7F7;
 	padding: 13px 20px;
 	transition: color 0.3s, background 0.3s, border 0.3s;
 } nav li .btn:hover {
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(220, 220, 220, 0.2);
 	cursor: pointer;
 }
 
@@ -90,7 +90,7 @@ nav li .dropdown {
 	width: 30px;
 } nav li .dropdown div {
 	width: 30px;
-	background: #F4F4F4;
+	background: #F7F7F7;
 	height: 4px;
 	margin: 7px 0px 7px 0px;
 	transition: width 0.3s, background 0.3s;
@@ -129,6 +129,17 @@ nav li .dropdown:hover {
 	color: #000000;
 	cursor: pointer;
 	background: #E2E2E2;
+}
+
+
+header .header-content {
+	min-height: 10px;
+	min-width: 10px;
+	padding: 60px 0px;
+	color: #F4F4F4;
+} 
+header#splash .header-content {
+	padding: 120px 0px;
 }
 
 

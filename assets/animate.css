@@ -8,3 +8,36 @@
 	vertical-align: top;
 	box-sizing: border-box;
 }
+
+.wrapper {
+  width: 50%;
+  margin: auto;
+}
+
+.scrollelement {
+  display: inline-block;
+}
+
+.squaretree {
+  background-image: url("square-tree.svg");
+  width:100px;
+  height: 200px;
+}
+
+.circletree {
+  background-image: url("circle-tree.svg");
+  width:100px;
+  height: 200px;
+}
+
+.conetree {
+  background-image: url("cone-tree.svg");
+  width:100px;
+  height: 200px;
+}
+
+.ground {
+  width: 100vw;
+  height: 30px;
+  background-color: red;
+}

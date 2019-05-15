@@ -3,7 +3,133 @@
 
 body {
 	background: #FFFFFF; 
+	padding: 30px;
 } 
+
+
+header {
+	display: inline-block;
+	width: 100%; 
+	min-height: 50px;
+	background: #313133;
+}
+
+
+nav {
+	display: inline-block;
+	width: 100%;
+	min-height: 10px;
+	padding: 25px 0px;
+	background: none;
+}
+
+nav .left {
+	display: inline-block;
+	min-height: 10px;
+	float: left;
+}
+nav .right {
+	display: inline-block;
+	min-height: 10px;
+	float: right;
+}
+
+nav .logo img {
+	height: 44px; 
+	padding: 8px 0px;
+	width: auto;
+	opacity: 1;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+	height: 44px; 
+	display: -webkit-box; 
+	-webkit-box-align: center;
+}
+nav .tab, nav .btn {
+	margin-left: 30px;
+}
+
+nav li .tab {
+	display: block;
+    color: #E8E8E8;
+	font-size: 14px;
+    text-decoration: none;
+	transition: color 0.3s, border-bottom 0.2s;
+	box-sizing: border-box;
+	padding: 8px 0px;
+	border-bottom: 1px solid transparent;
+} nav li .tab:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+	/*border-bottom: 1px solid #3E9B67;*/
+}
+
+nav li .btn {
+	display: block;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 15px;
+	border: 1px solid #FFFFFF;
+	padding: 13px 20px;
+	transition: color 0.3s, background 0.3s, border 0.3s;
+} nav li .btn:hover {
+	background: rgba(255, 255, 255, 0.2);
+	cursor: pointer;
+}
+
+nav li .dropdown {
+	display: none;
+	box-sizing: border-box;
+	width: 30px;
+} nav li .dropdown div {
+	width: 30px;
+	background: #F4F4F4;
+	height: 4px;
+	margin: 7px 0px 7px 0px;
+	transition: width 0.3s, background 0.3s;
+} nav li .dropdown .line-1 { width: 24px; } nav li .dropdown .line-2 { width: 20px; }
+nav li .dropdown:hover {
+	cursor: pointer;
+} nav li .dropdown:hover div {
+	width: 100%;
+} 
+
+
+.mobile {
+    display: inline-block;
+	width: 100%;
+	background: #EFEFEF;
+}
+#mobileNav { display: none; }
+.mobile ul {
+    list-style-type: none;
+}
+.mobile li {
+    float: left;
+	width: 100%;
+}
+.mobile li .tab, .mobile li .btn {
+	display: block;
+	width: 100%;
+    color: #333333;
+    text-decoration: none;
+	transition: background 0.3s;
+	box-sizing: border-box;
+	padding: 22px 30px;
+	font-size: 18px;
+}
+.mobile li .tab:hover, .mobile li .btn:hover {
+	color: #000000;
+	cursor: pointer;
+	background: #E2E2E2;
+}
 
 
 
@@ -25,7 +151,15 @@ body {
 
 /* Smaller than tablet */
 @media (max-width: 750px) {
-	
+	body {
+		padding: 0px;
+	}
+	nav li .tab, nav li .btn {
+		display: none;
+	}
+	nav li .dropdown {
+		display: block;
+	}
 }
 
 /* Smaller than mobile */

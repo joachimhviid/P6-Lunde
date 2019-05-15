@@ -9,68 +9,58 @@
   <meta name="author" content="Hjemmeside" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Icon -->
+  
+  <!--      -->
+  
+  <!-- Cookies -->
+  
+  <!--         -->
 
   <link rel="stylesheet" href="css/main.css" />
 
 </head>
 <body>
 
-<!-- Hurtig CSS. Brug ikke <style> til rigtige projekter -->
-<style>
-main {
-  display: inline-block;
-  width: 100%;  
-}
-.row div {
-  margin-bottom: 10px;
-}
-.row div a {
-  display: inline-block;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.1);
-}
-</style>
+<header>
 
-<main>
-
-  <!-- Divs med x / 12 kolonner i bredde -->
-  <div class="row">
-    <div class="grid-xs-4"> <a>1</a> </div>
-    <div class="grid-xs-4"> <a>2</a> </div>
-    <div class="grid-xs-4"> <a>3</a> </div>
-	<div class="grid-xs-4"> <a>4</a> </div>
-    <div class="grid-xs-4"> <a>5</a> </div>
-    <div class="grid-xs-4"> <a>6</a> </div>
-  </div>
-  
-  <!-- Bare lidt hurtig mellemrum. Brug ikke <br> til rigtige projekter -->
-  <br><br> 
-  
-  <!-- Samme som ovenfor, men i centrum af skærmen fordi de er indeni <div class="container"> -->
-  <div class="row">
-    <div class="container">
-      <div class="grid-xs-4"> <a>1</a> </div>
-      <div class="grid-xs-4"> <a>2</a> </div>
-      <div class="grid-xs-4"> <a>3</a> </div>
-	  <div class="grid-xs-4"> <a>4</a> </div>
-      <div class="grid-xs-4"> <a>5</a> </div>
-      <div class="grid-xs-4"> <a>6</a> </div>
+  <nav>
+	<div class="container-full">
+	  <div class="left">
+		<a class="logo" href="index"><img src="images/lunde-by.svg" alt="Qeeck" /></a>
+	  </div>
+	  <div class="right">
+		<ul id="nav">
+		  <li><a class="tab" href="index">Events & projekter</a></li>
+		  <li><a class="tab" href="produkter">Om byen</a></li>
+		  <li><a class="tab" href="produkter">Kontakt</a></li>
+		  <li><a class="btn" href="kontakt">Flyt til Lunde</a></li>
+		  <li><a class="dropdown" onClick="toggleDrop();">
+		    <div class="line-1"></div> <div class="line-2"></div> <div class="line-3"></div> 
+		  </a></li>
+		</ul>
+	  </div>
 	</div>
+  </nav>
+  
+  <div class="mobile" id="mobileNav">
+	<ul>
+	  <li><a class="tab" href="index">Events & projekter</a></li>
+	  <li><a class="tab" href="produkter">Om byen</a></li>
+	  <li><a class="tab" href="produkter">Kontakt</a></li>
+	  <li><a class="btn" href="kontakt">Flyt til Lunde</a></li>
+	</ul>
   </div>
   
-  <br><br> 
+<script>
+function toggleDrop() {
+  var x = document.getElementById("mobileNav");
+  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
+}
+</script>
   
-  <!-- Samme som ovenfor, men hver div bliver mindre på desktop-størrelse skærm (lg) -->
-  <div class="row">
-    <div class="container">
-      <div class="grid-xs-4 grid-lg-2"> <a>1</a> </div>
-      <div class="grid-xs-4 grid-lg-2"> <a>2</a> </div>
-      <div class="grid-xs-4 grid-lg-2"> <a>3</a> </div>
-	  <div class="grid-xs-4 grid-lg-2"> <a>4</a> </div>
-      <div class="grid-xs-4 grid-lg-2"> <a>5</a> </div>
-      <div class="grid-xs-4 grid-lg-2"> <a>6</a> </div>
-	</div>
-  </div>
+</header>
 
 </main>
 

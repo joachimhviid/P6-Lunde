@@ -58,6 +58,17 @@ font-weight: 900;
 font-style: italic; }
 
 
+@font-face
+{ font-family: ITC-AvantGarde; src: url(../fonts/ITC-Avant-Garde-Gothic-Std/itc-avant-garde-gothic-std-book.otf);
+font-display: swap;
+font-weight: 400; }
+
+@font-face
+{ font-family: ITC-AvantGarde; src: url(../fonts/ITC-Avant-Garde-Gothic-Std/itc-avant-garde-gothic-std-bold.otf);
+font-display: swap;
+font-weight: 700; }
+
+
 
 /* Reset 
 ---------------------------------------- */

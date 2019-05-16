@@ -10,34 +10,38 @@
 }
 
 .wrapper {
-  width: 50%;
+  width: 100vw;
   margin: auto;
 	position: relative;
 	top: 120px;
+}
+
+body {
+	overflow-x: hidden;
 }
 
 .scrollelement {
   display: inline-block;
 	position: relative;
 	z-index: 10;
-	animation: travelling 5s linear 0s infinite normal none running;
+	animation: travelling 8s linear 0s infinite normal none running;
 }
 
 .squaretree {
-  /*background-image: url("square-tree.svg");*/
+  background-image: url("square-tree.svg");
   width:100px;
   height: 200px;
 	fill: white;
 }
 
 .circletree {
-  /*background-image: url("circle-tree.svg");*/
+  background-image: url("circle-tree.svg");
   width:100px;
   height: 200px;
 }
 
 .conetree {
-  /*background-image: url("cone-tree.svg");*/
+  background-image: url("cone-tree-dark.svg");
   width:100px;
   height: 200px;
 }
@@ -47,6 +51,10 @@
   height: 30px;
   background-color: red;
 	margin-top: 120px;
+}
+
+.backgroundwrapper {
+	overflow-x: hidden;
 }
 
 .background {
@@ -59,21 +67,26 @@
 }
 
 .bgparticles {
-	/*background-image: url("bg-particles.svg");*/
-	animation: travelling 6s linear 0s infinite normal none running;
+	background-image: url("bg-particles.svg");
+	background-repeat: repeat-x;
 	height: 350px;
-	width: 1920px;
+	width: 5760px;
+}
+
+.bgscrollelement {
+	animation: bgtravelling 20s linear 0s infinite normal none running;
 	position: fixed;
 	top: 0;
+	right: 0;
 	z-index: -49;
 }
 
 @keyframes travelling {
-	0% {transform: translateX(1500px);}
-	100% {transform: translateX(-1000px);}
+	0% {transform: translateX(1920px);}
+	100% {transform: translateX(-500px);}
 }
 
 @keyframes bgtravelling {
-	0% {transform: translateX(1500px);}
-	100% {transform: translateX(-1000px);}
+	0% {transform: translateX(1920px);}
+	100% {transform: translateX(0px);}
 }

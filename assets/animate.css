@@ -34,8 +34,6 @@ body {
   background-image: url("square-tree-dark.svg");
   width:100px;
   height: 200px;
-	fill: white;
-	/* margin-right: 200px; */
 }
 
 .circletree {

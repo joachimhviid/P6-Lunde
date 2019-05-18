@@ -25,25 +25,31 @@ body {
 	position: relative;
 	z-index: 10;
 	animation: travelling 8s linear 0s infinite normal none running;
+	user-select: none;
+	background-repeat: no-repeat;
 }
 
 .squaretree {
-  background-image: url("square-tree.svg");
+  background-image: url("square-tree-dark.svg");
   width:100px;
   height: 200px;
 	fill: white;
 }
 
 .circletree {
-  background-image: url("circle-tree.svg");
+  background-image: url("circle-tree-dark.svg");
   width:100px;
   height: 200px;
+	position: relative;
+	top: 13px;
 }
 
 .conetree {
   background-image: url("cone-tree-dark.svg");
   width:100px;
   height: 200px;
+	position: relative;
+	top: 19px;
 }
 
 .ground {

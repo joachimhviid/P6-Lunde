@@ -1,0 +1,7 @@
+.clickable-heading {
+    cursor: pointer;
+}
+
+.clickable-heading:hover {
+    color: #515151;
+}

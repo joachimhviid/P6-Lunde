@@ -25,7 +25,6 @@ body {
   display: inline-block;
 	position: relative;
 	z-index: 10;
-	animation: travelling 8s linear 0s infinite normal none running;
 	user-select: none;
 	background-repeat: no-repeat;
 }
@@ -34,6 +33,7 @@ body {
   background-image: url("square-tree-dark.svg");
   width:100px;
   height: 200px;
+	animation: travelling 8s linear 0s infinite normal none running;
 }
 
 .circletree {
@@ -42,6 +42,7 @@ body {
   height: 200px;
 	position: relative;
 	top: 13px;
+	animation: travelling 8s linear 0s infinite normal none running;
 }
 
 .conetree {
@@ -50,6 +51,7 @@ body {
   height: 200px;
 	position: relative;
 	top: 19px;
+	animation: travelling 8s linear 0s infinite normal none running;
 }
 
 .ground {
@@ -90,7 +92,7 @@ body {
 
 @keyframes travelling {
 	0% {transform: translateX(1920px);}
-	100% {transform: translateX(-500px);}
+	100% {transform: translateX(-200px);}
 }
 
 @keyframes bgtravelling {

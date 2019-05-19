@@ -8,22 +8,40 @@ var x = document.getElementsByClassName("divFam");
 }*/
 
 function funcFam() {
-  var x = document.getElementsByClassName("divFam");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
+    var x = document.getElementsByClassName("divFam");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
 
-document.getElementsById("katMad").onclick = function () {
-    document.getElementsByClassName("divMad").style.display = "block";
+function funcMad() {
+    var x = document.getElementsByClassName("divMad");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
 
-document.getElementsById("katIns").onclick = function () {
-    document.getElementsByClassName("divIns").style.display = "block";
+function funcIns() {
+    var x = document.getElementsByClassName("divIns");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
 }
 
-document.getElementsById("katGro").onclick = function () {
-    document.getElementsByClassName("divGro").style.display = "block";
-}
+function funcGro() {
+    var x = document.getElementsByClassName("divGro");
+    var i;
+    for (i = 0; i < x.length; i++) {
+        if (x[i].style.display === "none") {
+            x[i].style.display = "block";
+        } else {
+            x[i].style.display = "none";
+        }
+    }
+            

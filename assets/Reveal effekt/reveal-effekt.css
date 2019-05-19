@@ -8,76 +8,70 @@ body {
     background-color: #BFBCA9;
 }
 
-
-.kasse1{
-    background-color: #DBD9CD;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    margin-left: 152px;
+.kasse{
+    height: 2500px;
 }
 
-.kasse2{
-    background-color: #DBD9CD;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    margin-left: 445px;
-    margin-top: -250px;
+
+
+.active {
+  background: #000000;
 }
 
-.kasse3{
-    background-color: #DBD9CD;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    margin-left: 745px;
-    margin-top: -250px
-    
+section {
+  background: #ccc;
+  transition: all 1s ease;
+  padding: 2% 0;
+  overflow-x: hidden;
+  max-width: 1000px;
+  margin: 2% auto;
 }
 
-.kasse4{
-    background-color: #DBD9CD;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    margin-left: 1040px;
-    margin-top: -250px;
+h1{
+  padding: 100px 0;
+  text-align: center;
 }
 
-.kasse5{
-    background-color: #DBD9CD;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    margin-left: 152px;
-    margin-top: 50px;
+h1+p {
+  margin: -100px auto 200px auto;
+  text-align: center;
+  max-width: 20em;
 }
 
-.kasse6{
-    background-color: #DBD9CD;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    margin-left: 445px;
-    margin-top: -250px;
+.revealer {
+  position: relative;
+    height: 200px;
 }
 
-.kasse7{
-    background-color: #DBD9CD;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    margin-left: 745px;
-    margin-top: -250px
-    
+.revealme {
+  transition: all 1s ease;
+  opacity: 0;
 }
 
-.kasse8{
-    background-color: #DBD9CD;
-    text-align: center;
-    width: 250px;
-    height: 250px;
-    margin-left: 1040px;
-    margin-top: -250px;
+.active .revealme {
+  opacity: 1;
+}
+
+.revealme.fromleft {
+  position: absolute;
+  top:50%;
+  transform: translate(0, -50%);
+  left: -100%;
+}
+
+.active .revealme.fromleft {
+  opacity: 1;
+  left: 2%;
+}
+
+.revealme.fromright {
+  position: absolute;
+  top:50%;
+  transform: translate(0, -50%);
+  right: -100%;
+}
+
+.active .revealme.fromright {
+  opacity: 1;
+  right: 2%;
 }

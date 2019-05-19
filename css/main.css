@@ -6,6 +6,7 @@ body {
 	padding: 30px;
 	font-family: OpenSans;
 	font-weight: 400;
+	overflow-x: hidden;
 } 
 
 

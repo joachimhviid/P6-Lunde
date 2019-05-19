@@ -1,7 +1,11 @@
-.clickable-heading {
+.kategori {
     cursor: pointer;
 }
 
-.clickable-heading:hover {
+.kategori:hover {
     color: #515151;
+}
+
+.popup {
+    display: none;
 }

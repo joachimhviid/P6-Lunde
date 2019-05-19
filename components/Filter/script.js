@@ -1,19 +1,15 @@
-function toggleDocs(event) {
-
-    if (event.target && event.target.className == 'clickable-heading') {
-
-        var next = event.target.nextElementSibling;
-
-
-        if (next.style.display == "none") {
-            next.style.display = "block";
-
-        } else {
-            next.style.display = "none";
-        }
-    }
+document.getElementsById("katFam").onclick = function () {
+    document.getElementsByClassName("divFam").style.display = "block";
 }
 
-document.addEventListener('click', toggleDocs, true);
+document.getElementsById("katMad").onclick = function () {
+    document.getElementsByClassName("divMad").style.display = "block";
+}
 
-// Original code by: Isabel Castillo
+document.getElementsById("katIns").onclick = function () {
+    document.getElementsByClassName("divIns").style.display = "block";
+}
+
+document.getElementsById("katGro").onclick = function () {
+    document.getElementsByClassName("divGro").style.display = "block";
+}

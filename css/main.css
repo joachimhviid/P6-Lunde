@@ -108,7 +108,7 @@ nav li .dropdown:hover {
 .mobile {
     display: inline-block;
 	width: 100%;
-	background: #1E1E1E;
+	background: #212121;
 }
 #mobileNav { display: none; }
 .mobile ul {
@@ -131,7 +131,7 @@ nav li .dropdown:hover {
 .mobile li .tab:hover, .mobile li .btn:hover {
 	color: #FFFFFF;
 	cursor: pointer;
-	background: #000000;
+	background: #111111;
 }
 
 

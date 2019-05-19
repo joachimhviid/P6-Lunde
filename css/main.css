@@ -108,7 +108,7 @@ nav li .dropdown:hover {
 .mobile {
     display: inline-block;
 	width: 100%;
-	background: #EFEFEF;
+	background: #1E1E1E;
 }
 #mobileNav { display: none; }
 .mobile ul {
@@ -121,7 +121,7 @@ nav li .dropdown:hover {
 .mobile li .tab, .mobile li .btn {
 	display: block;
 	width: 100%;
-    color: #333333;
+    color: #F7F7F7;
     text-decoration: none;
 	transition: background 0.3s;
 	box-sizing: border-box;
@@ -129,9 +129,9 @@ nav li .dropdown:hover {
 	font-size: 18px;
 }
 .mobile li .tab:hover, .mobile li .btn:hover {
-	color: #000000;
+	color: #FFFFFF;
 	cursor: pointer;
-	background: #E2E2E2;
+	background: #000000;
 }
 
 
@@ -148,6 +148,25 @@ nav li .dropdown:hover {
 } .button-primary:hover {
 	background: #358254;
 	cursor: pointer;
+}
+
+.button-primary-dark {
+	display: inline-block;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+	background: #333333;
+	margin-top: 15px;
+	padding: 16px 30px;
+	transition: color 0.3s, background 0.3s;
+} .button-primary-dark:hover {
+	background: #000000;
+	cursor: pointer;
+}
+
+.text-center {
+	text-align: center;
 }
 
 
@@ -200,9 +219,7 @@ main section h3 {
 	font-size: 40px;
 	font-weight: 700;
 	margin-bottom: 40px;
-}
-main section .h-center {
-	text-align: center;
+	padding: 0px 15px;
 }
 
 main .canvas {

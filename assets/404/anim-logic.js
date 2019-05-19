@@ -13,10 +13,20 @@ coneTree.style.marginRight = coneMargin;
 
 // Calculates future margins
 var animInterval = setInterval(randomSpacing, 8000);
-var itemLoc = setInterval(getLocation, 1000);
+var itemLoc = setInterval(getLocation, 7999);
 
 function randomSpacing() {
   squareTree.style.marginRight = (Math.random() * maxSpace) + 'px';
   circleTree.style.marginRight = (Math.random() * maxSpace) + 'px';
   coneTree.style.marginRight = (Math.random() * maxSpace) + 'px';
+}
+
+function getLocation() {
+  var squareLoc = square.getBoundingClientRect();
+  var circleLoc = circle.getBoundingClientRect();
+  var coneLoc = cone.getBoundingClientRect();
+
+  console.log("Square margin and loc: " + squareTree.style.marginRight + " | " + squareLoc.left + " | " + squareLoc.right);
+  console.log("Circle margin and loc: " + circleTree.style.marginRight + " | " + circleLoc.left + " | " + circleLoc.right);
+  console.log("Cone margin and loc: " + coneTree.style.marginRight + " | " + coneLoc.left + " | " + coneLoc.right);
 }

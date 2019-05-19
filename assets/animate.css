@@ -10,48 +10,63 @@
 }
 
 .wrapper {
-  width: 50%;
+  width: 100vw;
   margin: auto;
 	position: relative;
 	top: 120px;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: #808080;
 }
 
 .scrollelement {
   display: inline-block;
 	position: relative;
 	z-index: 10;
-	animation: travelling 5s linear 0s infinite normal none running;
+	animation: travelling 8s linear 0s infinite normal none running;
+	user-select: none;
+	background-repeat: no-repeat;
 }
 
 .squaretree {
-  /*background-image: url("square-tree.svg");*/
+  background-image: url("square-tree-dark.svg");
   width:100px;
   height: 200px;
-	fill: white;
 }
 
 .circletree {
-  /*background-image: url("circle-tree.svg");*/
+  background-image: url("circle-tree-dark.svg");
   width:100px;
   height: 200px;
+	position: relative;
+	top: 13px;
 }
 
 .conetree {
-  /*background-image: url("cone-tree.svg");*/
+  background-image: url("cone-tree-dark.svg");
   width:100px;
   height: 200px;
+	position: relative;
+	top: 19px;
 }
 
 .ground {
   width: 100vw;
-  height: 30px;
-  background-color: red;
+  height: 10px;
+  /* background-image: url("dark-floor.svg"); */
+	background-color: #d9d9d9;
 	margin-top: 120px;
+}
+
+.backgroundwrapper {
+	overflow-x: hidden;
 }
 
 .background {
 	background-color: #313133;
-	height: 350px;
+	height: 330px;
 	width: 100vw;
 	position: fixed;
 	top: 0;
@@ -59,21 +74,26 @@
 }
 
 .bgparticles {
-	/*background-image: url("bg-particles.svg");*/
-	animation: travelling 6s linear 0s infinite normal none running;
-	height: 350px;
-	width: 1920px;
+	background-image: url("bg-particles.svg");
+	background-repeat: repeat-x;
+	height: 330px;
+	width: 5760px;
+}
+
+.bgscrollelement {
+	animation: bgtravelling 20s linear 0s infinite normal none running;
 	position: fixed;
 	top: 0;
+	right: 0;
 	z-index: -49;
 }
 
 @keyframes travelling {
-	0% {transform: translateX(1500px);}
-	100% {transform: translateX(-1000px);}
+	0% {transform: translateX(1920px);}
+	100% {transform: translateX(-500px);}
 }
 
 @keyframes bgtravelling {
-	0% {transform: translateX(1500px);}
-	100% {transform: translateX(-1000px);}
+	0% {transform: translateX(1920px);}
+	100% {transform: translateX(0px);}
 }

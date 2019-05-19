@@ -1,0 +1,11 @@
+.kategori {
+    cursor: pointer;
+}
+
+.kategori:hover {
+    color: #515151;
+}
+
+.popup {
+    display: none;
+}

@@ -6,7 +6,7 @@ body {
 	padding: 30px;
 	font-family: OpenSans;
 	font-weight: 400;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 } 
 
 
@@ -219,18 +219,19 @@ main section h3 {
 	font-family: ITC-AvantGarde;
 	font-size: 40px;
 	font-weight: 700;
-	margin-bottom: 40px;
-	padding: 0px 15px;
+	margin: 0px 30px 40px 30px;
 }
 
 main .canvas {
-	display: block;
+	display: inline-block;
+	width: 100%;
 	background: #F7F7F7;
 	width: 100%;
 	height: 600px;
 	overflow: scroll;
 }
 main .canvas .map {
+	display: inline-block;
 	width: 2400px;
 	height: auto;
 }

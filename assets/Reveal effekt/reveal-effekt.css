@@ -1,0 +1,83 @@
+ {
+   
+    margin: 0px;
+    padding: 0px;
+}
+ 
+body {
+    background-color: #BFBCA9;
+}
+
+
+.kasse1{
+    background-color: #DBD9CD;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 152px;
+}
+
+.kasse2{
+    background-color: #DBD9CD;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 445px;
+    margin-top: -250px;
+}
+
+.kasse3{
+    background-color: #DBD9CD;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 745px;
+    margin-top: -250px
+    
+}
+
+.kasse4{
+    background-color: #DBD9CD;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 1040px;
+    margin-top: -250px;
+}
+
+.kasse5{
+    background-color: #DBD9CD;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 152px;
+    margin-top: 50px;
+}
+
+.kasse6{
+    background-color: #DBD9CD;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 445px;
+    margin-top: -250px;
+}
+
+.kasse7{
+    background-color: #DBD9CD;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 745px;
+    margin-top: -250px
+    
+}
+
+.kasse8{
+    background-color: #DBD9CD;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin-left: 1040px;
+    margin-top: -250px;
+}

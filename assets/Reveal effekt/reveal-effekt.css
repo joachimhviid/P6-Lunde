@@ -24,6 +24,7 @@ section {
   padding: 2% 0;
   overflow-x: hidden;
   max-width: 1000px;
+  min-height: 500px;
   margin: 2% auto;
 }
 
@@ -33,45 +34,49 @@ h1{
 }
 
 h1+p {
-  margin: -100px auto;
   text-align: center;
   max-width: 20em;
 }
 
 .revealer {
   position: relative;
-    height: 200px;
 }
 
 .revealme {
   transition: all 1s ease;
   opacity: 0;
+  position: absolute;
+  transform: translate(0, 50%);
 }
 
 .active .revealme {
   opacity: 1;
+  transform: translate(0, 50%);
 }
 
 .revealme.fromleft {
-  position: absolute;
-  top:50%;
-  transform: translate(0, -50%);
   left: -100%;
-}
-
-.active .revealme.fromleft {
-  opacity: 1;
-  left: 2%;
+  transform: translate(-50px, -75px);
 }
 
 .revealme.fromright {
-  position: absolute;
-  top:50%;
-  transform: translate(0, -50%);
-  right: -100%;
+  left: 200%;
+  transform: translate(-50px, 75px);
 }
 
-.active .revealme.fromright {
-  opacity: 1;
-  right: 2%;
+.active .revealme.a {
+  left: 20%;
 }
+
+.active .revealme.b {
+  left: 40%;
+}
+
+.active .revealme.c {
+  left: 60%;
+}
+
+.active .revealme.d {
+  left: 80%;
+}
+

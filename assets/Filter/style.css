@@ -1,19 +1,31 @@
 #popup p {
     display: none;
+    /*height: 0;
+	overflow: hidden;
+	transition: height 350ms ease-in-out;
+    */
 }
 
 #popup.show-fam .fam {
     display: block;
+    /*height: auto;
+    */
 }
 
 #popup.show-mad .mad {
     display: block;
+    /*height: auto;
+    */
 }
 
 #popup.show-ind .ind {
     display: block;
+    /*height: auto;
+    */
 }
 
 #popup.show-gro .gro {
     display: block;
+    /*height: auto;
+    */
 }

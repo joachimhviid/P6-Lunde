@@ -33,7 +33,7 @@ body {
   background-image: url("square-tree-dark.svg");
   width:100px;
   height: 200px;
-	animation: travelling 8s linear 0s infinite normal none running;
+	/* animation: travelling 8s linear 0s infinite normal none running; */
 }
 
 .circletree {
@@ -42,7 +42,7 @@ body {
   height: 200px;
 	position: relative;
 	top: 13px;
-	animation: travelling 8s linear 0s infinite normal none running;
+	/* animation: travelling 8s linear 0s infinite normal none running; */
 }
 
 .conetree {
@@ -51,7 +51,7 @@ body {
   height: 200px;
 	position: relative;
 	top: 19px;
-	animation: travelling 8s linear 0s infinite normal none running;
+	/* animation: travelling 8s linear 0s infinite normal none running; */
 }
 
 .ground {
@@ -83,7 +83,7 @@ body {
 }
 
 .bgscrollelement {
-	animation: bgtravelling 20s linear 0s infinite normal none running;
+	/* animation: bgtravelling 20s linear 0s infinite normal none running; */
 	position: fixed;
 	top: 0;
 	right: 0;

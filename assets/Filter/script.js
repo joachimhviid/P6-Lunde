@@ -1,11 +1,4 @@
-/*document.getElementsById("katFam").onclick = function () {
-var x = document.getElementsByClassName("divFam");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}*/
+document.getElementsByClassName("divFam").onclick = function() {funcFam()};
 
 function funcFam() {
     var x = document.getElementsByClassName("divFam");
@@ -16,6 +9,8 @@ function funcFam() {
     }
 }
 
+document.getElementsByClassName("divMad").onclick = function() {funcMad()};
+
 function funcMad() {
     var x = document.getElementsByClassName("divMad");
     if (x.style.display === "none") {
@@ -25,6 +20,8 @@ function funcMad() {
     }
 }
 
+document.getElementsByClassName("divIns").onclick = function() {funcIns()};
+
 function funcIns() {
     var x = document.getElementsByClassName("divIns");
     if (x.style.display === "none") {
@@ -33,6 +30,8 @@ function funcIns() {
         x.style.display = "none";
     }
 }
+
+document.getElementsByClassName("divGro").onclick = function() {funcGro()};
 
 function funcGro() {
     var x = document.getElementsByClassName("divGro");
@@ -44,4 +43,3 @@ function funcGro() {
             x[i].style.display = "none";
         }
     }
-            

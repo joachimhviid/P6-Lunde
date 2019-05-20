@@ -157,7 +157,7 @@ nav li .dropdown:hover {
 	text-decoration: none;
 	color: #FFFFFF;
 	font-size: 16px;
-	background: #333333;
+	background: #313133;
 	margin-top: 15px;
 	padding: 16px 30px;
 	transition: color 0.3s, background 0.3s;
@@ -219,6 +219,9 @@ main section h3 {
 	font-family: ITC-AvantGarde;
 	font-size: 40px;
 	font-weight: 700;
+	margin: 0px 0px 40px 0px;
+}
+main section h3.text-center {
 	margin: 0px 30px 40px 30px;
 }
 
@@ -289,6 +292,31 @@ footer .copyright .item a {
 	line-height: 18px;
 	display: inline-block;
 } 
+
+
+
+#styleguide nav {
+	background: #313133;
+	border-bottom: none;
+}
+
+#styleguide .button {
+	margin: 0px 15px 15px 0px;
+}
+
+#styleguide .color {
+	width: 100%;
+	height: 80px;
+	background: #EDEDED;
+	margin-bottom: 12px;
+}
+#styleguide .hex {
+	display: inline-block;
+	margin-bottom: 30px;
+	color: #333333;
+	font-weight: 600;
+}
+
 
 
 

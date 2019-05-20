@@ -3,23 +3,27 @@ const circleTree = document.getElementById('circle');
 const coneTree = document.getElementById('cone');
 const maxSpace = 500;
 
+var animItems = [squareTree, circleTree, coneTree];
+var animations = [squareAnim(), circleAnim(), coneAnim()];
+var i;
+
 var squareLoc = square.getBoundingClientRect();
 var circleLoc = circle.getBoundingClientRect();
 var coneLoc = cone.getBoundingClientRect();
 
 // Sets initial margins
-var squareMargin = (Math.random() * maxSpace) + 'px';
-var circleMargin = (Math.random() * maxSpace) + 'px';
-var coneMargin = (Math.random() * maxSpace) + 'px';
-squareTree.style.marginRight = squareMargin;
-circleTree.style.marginRight = circleMargin;
-coneTree.style.marginRight = coneMargin;
+// var squareMargin = (Math.random() * maxSpace) + 'px';
+// var circleMargin = (Math.random() * maxSpace) + 'px';
+// var coneMargin = (Math.random() * maxSpace) + 'px';
+// squareTree.style.marginRight = squareMargin;
+// circleTree.style.marginRight = circleMargin;
+// coneTree.style.marginRight = coneMargin;
 
 // Calculates future margins
-var animInterval = setInterval(randomSpacing, 8000);
+// var animInterval = setInterval(randomSpacing, 8000);
 // var itemLoc = setInterval(getLocation, 7999);
 
-document.addEventListener('DOMContentLoaded', treeAnim());
+document.addEventListener('DOMContentLoaded', randomizer());
 
 function randomSpacing() {
   squareTree.style.marginRight = (Math.random() * maxSpace) + 'px';
@@ -37,15 +41,50 @@ function getLocation() {
   console.log("Cone margin and loc: " + coneTree.style.marginRight + " | " + coneLoc.left + " | " + coneLoc.right);
 }
 
-function treeAnim() {
-  var treePos = window.innerWidth;
-  var animLoop = setInterval(frame, 5);
+function randomizer() {
+  Math.floor(Math.random()*animations.length)
+}
+
+function delay() {
+  let delay = Math.random()*5000;
+}
+
+function squareAnim() {
+  let treePos = window.innerWidth;
+  let animLoop = setInterval(frame, 5);
   function frame() {
-    if (treePos < 0-(squareLoc.right-squareLoc.left)) {
-      clearInterval(animLoop)
+    if (treePos < 0-animItems[0].offsetWidth) {
+      delay();
+      treePos = window.innerWidth;
     } else {
       treePos--;
-      squareTree.style.left = treePos + 'px';
+      animItems[0].style.left = treePos + 'px';
+    }
+  }
+}
+
+function circleAnim() {
+  let treePos = window.innerWidth;
+  let animLoop = setInterval(frame, 5);
+  function frame() {
+    if (treePos < 0-animItems[1].offsetWidth) {
+      treePos = window.innerWidth;
+    } else {
+      treePos--;
+      animItems[1].style.left = treePos + 'px';
+    }
+  }
+}
+
+function coneAnim() {
+  let treePos = window.innerWidth;
+  let animLoop = setInterval(frame, 5);
+  function frame() {
+    if (treePos < 0-animItems[2].offsetWidth) {
+      treePos = window.innerWidth;
+    } else {
+      treePos--;
+      animItems[2].style.left = treePos + 'px';
     }
   }
 }

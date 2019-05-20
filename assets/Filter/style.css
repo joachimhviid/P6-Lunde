@@ -1,11 +1,19 @@
-#books p {
+#popup p {
     display: none;
 }
 
-#books.show-book1 .book1 {
+#popup.show-fam .fam {
     display: block;
 }
 
-#books.show-book2 .book2 {
+#popup.show-mad .mad {
+    display: block;
+}
+
+#popup.show-ind .ind {
+    display: block;
+}
+
+#popup.show-gro .gro {
     display: block;
 }

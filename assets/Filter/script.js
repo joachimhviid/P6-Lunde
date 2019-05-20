@@ -5,7 +5,7 @@ function showHide(e) {
         return;
     }
 
-    var b = document.getElementById('books');
+    var b = document.getElementById('popup');
 
     if (e.target.checked) {
         b.classList.add("show-" + e.target.value);
@@ -14,18 +14,8 @@ function showHide(e) {
     }
 }
 
-/*document.getElementById("butFam").onclick = function() {funcFam()};
-
-function toggle(x) {
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}*/
-
-//true og false på to variabler
-//check hele documentet hver gang man trykker på en knap
-
 //lig to firkanter oven på hinanden, hvis det går galt
 //CSS animation on display block?
+
+/* https://stackoverflow.com/questions/32325932/in-vanilla-javascript-how-do-i-show-hide-spans-with-multiple-class-names 
+ */

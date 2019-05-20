@@ -1,23 +1,18 @@
-function checker(e) {
-    var ref, dir, itemset;
+document.getElementById('checkboxes').addEventListener('click', showHide);
 
-    if (e.target.type === 'checkbox') {
-        dir = e.target.checked ? 1 : -1;
+function showHide(e) {
+    if (e.target.type !== "checkbox") {
+        return;
+    }
 
-        itemset = document.getElementsByClassName(e.target.value);
+    var b = document.getElementById('books');
 
-        Array.prototype.forEach.call(itemset, function (el) {
-            ref = dir + parseInt(el.getAttribute('data-ref'), 10);
-            el.setAttribute('data-ref', ref);
-            el.style.display = ref > 0 ? 'block' : 'none';
-        });
+    if (e.target.checked) {
+        b.classList.add("show-" + e.target.value);
+    } else {
+        b.classList.remove("show-" + e.target.value);
     }
 }
-
-document
-    .getElementById('checks')
-    .addEventListener('click', checker);
-
 
 /*document.getElementById("butFam").onclick = function() {funcFam()};
 

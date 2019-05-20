@@ -4,25 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Filter</title>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div id="checks">
-        <input type="checkbox" value="one">
-        <input type="checkbox" value="two">
-        <input type="checkbox" value="three">
+    <div id="checkboxes">
+        <label>
+            <input type="checkbox" value="book1" />Book1</label>
+        <label>
+            <input type="checkbox" value="book2" />Book2</label>
     </div>
 
-    <div id="items">
-        <div class="item one" data-ref="0">one</div>
-        <div class="item two" data-ref="0">two</div>
-        <div class="item three" data-ref="0">three</div>
-        <item class="item one two" data-ref="0">one-two</item>
+    <div id="books">
+        <p class="book1">One</p>
+        <p class="book2">Two</p>
+        <p class="book1 book2">Both</p>
     </div>
-
 </body>
 
 </html>

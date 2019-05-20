@@ -1,3 +1,11 @@
-.item {
+#books p {
     display: none;
+}
+
+#books.show-book1 .book1 {
+    display: block;
+}
+
+#books.show-book2 .book2 {
+    display: block;
 }

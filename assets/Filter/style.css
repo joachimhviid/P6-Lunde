@@ -8,24 +8,24 @@
 
 #popup.show-fam .fam {
     display: block;
-    /*height: auto;
+    /*height: 20px;
     */
 }
 
 #popup.show-mad .mad {
     display: block;
-    /*height: auto;
+    /*height: 20px;
     */
 }
 
 #popup.show-ind .ind {
     display: block;
-    /*height: auto;
+    /*height: 20px;
     */
 }
 
 #popup.show-gro .gro {
     display: block;
-    /*height: auto;
+    /*height: 20px;
     */
 }

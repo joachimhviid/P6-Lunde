@@ -14,6 +14,7 @@ function showHide(e) {
     }
 }
 
+
 //lig to firkanter oven på hinanden, hvis det går galt
 //CSS animation on display block?
 

@@ -9,6 +9,7 @@
     
     
     <section class="revealer">
+    <h1>Section</h1>
     <div class="revealme fromleft">
         <img src="http://via.placeholder.com/100" alt="" />
     </div>
@@ -24,31 +25,33 @@
 </body>
     <script>
 
-        // reveal point from bottom and top of the window
-        var revealerpoint = 150;
-        window.addEventListener('scroll', reveal);
-        reveal();
+       // reveal point from bottom and top of the window
+var revealerpoint = 150;                                                        //Definer variabel for hvor langt fra top og bund noget skal vises
+window.addEventListener('scroll', reveal);                                      //Gør så når der scrolles køres revea()
+reveal();                                                                       //Kør reveal()
 
-        function reveal() {
-            console.log("scrolling");
-            var revealers = document.querySelectorAll('.revealer');
-            for (var i = 0; i < revealers.length; i++) {
-                var windowheight = window.innerHeight;
-                var revealertop = revealers[i].getBoundingClientRect().top;
-                var revealerbottom = revealers[i].getBoundingClientRect().bottom;
-                //console.log("revealertop: " + revealertop);
-                //console.log("revealerbottom: " + revealerbottom);
-                if (revealertop < windowheight - revealerpoint) {
-                    revealers[i].classList.add('active')
-                } else {
-                    revealers[i].classList.remove('active');
-                };
-                if (revealerbottom < 0 + revealerpoint) {
-                    revealers[i].classList.remove('active');
-                }
-            } 
-        };
-        
+function reveal() {                                                             //Definer reveal()
+    console.log("scrolling");                                                   //Skriv i console - ikke vigtig
+    var revealers = document.querySelectorAll('.revealer');                     //Definer "revealers" som array(?) af objekter der måske skal reveales
+    for (var i = 0; i < revealers.length; i++) {                                //For hver objekt der måske skal reveales:
+        var windowheight = window.innerHeight;                                      //Definer "windowheight" som højden af vinduet (i pixels)
+        var windowwidth = window.innerWidth;                                        //Definer "windowwodth" som bredden af vinduet (i pixels)
+        var revealertop = revealers[i].getBoundingClientRect().top;                 //Definer "revealertop" som toppen af hver kasse (i pixels)
+        var revealerbottom = revealers[i].getBoundingClientRect().bottom;           //Definer "revealerbottom" som bunden af hver kasse (i pixels)
+        var revealerleft = revealers[i].getBoundingClientRect().left;               //Definer "revealerleft" som venstre side af hver kasse (i pixels)
+        var revealerright = revealers[i].getBoundingClientRect().right;            //Definer "revealerright" som højre side af hver kasse (i pixels)
+        //console.log("revealertop: " + revealertop);
+        //console.log("revealerbottom: " + revealerbottom);
+        if (revealertop < windowheight - revealerpoint          //Hvis toppen af objektet der skal reveales er på skærmen
+        && revealerbottom > 0 + revealerpoint                                       //og bunden
+        && revealerleft < windowwidth - revealerpoint                               //og venstre side
+        && revealerright > 0 + revealerpoint) {                                     //og højre side
+            revealers[i].classList.add('active')                                        //Marker at den skal vises ved at give den classen "active" (modificeres i css)
+        } else {                                                                    //Ellers:
+            revealers[i].classList.remove('active');                                    //Fjern markeringen, så den ikke vises
+        };                                                     //Note: Både top, bund, venstre og højre side skal altså være indenfor skærmen for at objektet har classen "active"
+    } 
+};
         </script>
 
 </html>

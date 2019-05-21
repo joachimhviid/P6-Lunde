@@ -36,7 +36,7 @@
 		  <li><a class="tab" href="#">Om byen</a></li>
 		  <li><a class="tab" href="#">Kontakt</a></li>
 		  <li><a class="btn" href="boliger">Find bolig</a></li>
-		  <li><a class="dropdown" onClick="toggleDrop();">
+		  <li><a class="dropdown" onClick="toggleElement('mobileNav');">
 		    <div class="line-1"></div> <div class="line-2"></div> <div class="line-3"></div> 
 		  </a></li>
 		</ul>
@@ -52,13 +52,6 @@
 	  <li><a class="btn" href="boliger">Find bolig</a></li>
 	</ul>
   </div>
-  
-<script>
-function toggleDrop() {
-  var x = document.getElementById("mobileNav");
-  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
-}
-</script>
 
   <div class="container">
     <div class="row">
@@ -82,11 +75,20 @@ function toggleDrop() {
 
 <main>
 
-  <section class="tablet-hide">
+  <section>
 	<h3 class="text-center">Gå på opdagelse</h3>
 	<div class="canvas no-select" id="viewer">
-	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" draggable="false" />
-	  <div class="marker"></div>
+	
+	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
+	  
+	  <div class="marker" style="top:360px; left:1250px;" onClick="toggleElement('minkoebmand');">
+		<div class="marker-info" id="minkoebmand">
+		  <a class="title">MinKøbmand</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+	  </div>
+	  
 	</div>
   </section>
   
@@ -213,6 +215,13 @@ function toggleDrop() {
 
 </footer>
 
+<script>
+function toggleElement(id) {
+  let x = document.getElementById(id);
+  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
+}
+</script>
+
 <script src="js/RequestAnimationFrame.js"></script>
 <script src="js/TouchScroll.js"></script>
 <script>
@@ -222,7 +231,7 @@ viewer.init({
 	draggable: true,
 	wait: false
 });
-document.getElementById("viewer").scrollTop = 240;
+document.getElementById("viewer").scrollTop = 120;
 document.getElementById("viewer").scrollLeft = 340;
 </script>
 

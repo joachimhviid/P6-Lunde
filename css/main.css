@@ -389,6 +389,12 @@ main .imageText {
     opacity: 1;
 }
 
+#checkboxes {
+    background-color: #313133;
+    display: block;
+    width: 200px;
+}
+
 .checkText {
     display: block;
     padding-left: 35px;
@@ -408,7 +414,7 @@ main .imageText {
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #eee;
+    background-color: #FFFFFF;
 }
 
 .checkText:hover input ~ .checkmark {

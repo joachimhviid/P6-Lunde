@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+
+  <title>Danmarks måske hyggeligste lille by Jyllands vestkyst - Lunde by</title>
+  <meta name="description" content="Danmarks måske hyggeligste lille by Jyllands vestkyst - Lunde by" />
+  <meta name="keywords" content="">
+  <meta name="author" content="Lunde by" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Icon -->
+  
+  <!--      -->
+  
+  <!-- Cookies -->
+  
+  <!--         -->
+
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+<body>
+
+  
+<main>
+  <section>
+	<h3 class="text-center">Gå på opdagelse</h3>
+	<div class="canvas no-select" id="viewer">
+	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" draggable="false" />
+	  <div class="marker"></div>
+	</div>
+  </section>
+</main>
+  
+<script src="js/RequestAnimationFrame.js"></script>
+<script src="js/TouchScroll.js"></script>
+<script>
+var viewer = new TouchScroll();
+viewer.init({
+	id: 'viewer',
+	draggable: true,
+	wait: false
+});
+document.getElementById("viewer").scrollTop = 240;
+document.getElementById("viewer").scrollLeft = 340;
+</script>
+
+
+</body>
+</html>

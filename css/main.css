@@ -242,6 +242,12 @@ main .canvas .map {
 }
 
 .no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     cursor: move;
     cursor: -moz-grab;
     cursor: -webkit-grab;
@@ -407,6 +413,10 @@ footer .copyright .item a {
 
 /* Smaller than tablet */
 @media (max-width: 750px) {
+	.tablet-hide {
+		display: none;
+	}
+	
 	nav li .tab, nav li .btn {
 		display: none;
 	}
@@ -415,14 +425,6 @@ footer .copyright .item a {
 	}
 	header .header-promote img {
 		display: none;
-	}
-	main .canvas {
-		overflow: scroll;
-	}
-	main .canvas::-webkit-scrollbar {
-		width: 0px; 
-		height: 0px; 
-		background: transparent; 
 	}
 	
 
@@ -444,14 +446,7 @@ footer .copyright .item a {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-	.no-select {
-		-webkit-touch-callout: none;
-		-webkit-user-select: none;
-		-khtml-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
+	
 }
 
 /* Larger than desktop */

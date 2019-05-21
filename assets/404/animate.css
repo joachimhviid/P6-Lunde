@@ -22,21 +22,21 @@ body {
 }
 
 .scrollelement {
-  display: inline-block;
+  display: none;
 	position: relative;
 	z-index: 10;
 	user-select: none;
 	background-repeat: no-repeat;
 }
 
-.squaretree {
+.item:nth-of-type(1) {
   background-image: url("square-tree-dark.svg");
   width:100px;
   height: 200px;
 	/* animation: travelling 8s linear 0s infinite normal none running; */
 }
 
-.circletree {
+.item:nth-of-type(2) {
   background-image: url("circle-tree-dark.svg");
   width:100px;
   height: 200px;
@@ -45,13 +45,17 @@ body {
 	/* animation: travelling 8s linear 0s infinite normal none running; */
 }
 
-.conetree {
+.item:nth-of-type(3) {
   background-image: url("cone-tree-dark.svg");
   width:100px;
   height: 200px;
 	position: relative;
 	top: 19px;
 	/* animation: travelling 8s linear 0s infinite normal none running; */
+}
+
+.show {
+	display: inline-block;
 }
 
 .ground {

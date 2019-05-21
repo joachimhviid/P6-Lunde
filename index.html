@@ -81,16 +81,239 @@
 	
 	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
 	  
-	  <div class="marker" style="top:360px; left:1250px;" onClick="toggleElement('minkoebmand');">
+	  <div id="pupup">
+        <div class="marker mad but" style="top:360px; left:1250px;" onClick="toggleElement('minkoebmand');">
 		<div class="marker-info" id="minkoebmand">
-		  <a class="title">MinKøbmand</a>
+		  <a class="title">Min Købmand</a>
 		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
 		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
 		</div>
-	  </div>
-	  
-	</div>
-  </section>
+		</div>
+		<div class="marker mad but" style="top:360px; left:1200px;" onClick="toggleElement('lundekro');">
+		<div class="marker-info" id="lundekro">
+		  <a class="title">Lunde Kro</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker mad spo" style="top:360px; left:1150px;" onClick="toggleElement('grillhytte');">
+		<div class="marker-info" id="grillhytte">
+		  <a class="title">Grill hytte</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+        </div>
+        </div>
+        <div class="marker tra" style="top:340px; left:1250px;" onClick="toggleElement('togstation');">
+		<div class="marker-info" id="togstation">
+		  <a class="title">Tog station(Vestbanen)</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker tra" style="top:340px; left:1200px;" onClick="toggleElement('lundetaxi');">
+		<div class="marker-info" id="lundetaxi">
+		  <a class="title">Lunde Taxi</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker tra" style="top:340px; left:1150px;" onClick="toggleElement('goontankstation');">
+		<div class="marker-info" id="goontankstation">
+		  <a class="title">Go’on Tankstation</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+        </div>
+        </div>
+        <div class="marker tra" style="top:320px; left:1250px;" onClick="toggleElement('autopartner');">
+		<div class="marker-info" id="autopartner">
+		  <a class="title">Auto Partner</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker tra vir" style="top:320px; left:1200px;" onClick="toggleElement('lundemaskincenter');">
+		<div class="marker-info" id="lundemaskincenter">
+		  <a class="title">Lunde Maskincenter</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker tra vir" style="top:320px; left:1150px;" onClick="toggleElement('lundemaskinstation');">
+		<div class="marker-info" id="lundemaskinstation">
+		  <a class="title">Lunde Maskinstation</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+        </div>
+        </div>
+        <div class="marker ins" style="top:320px; left:1250px;" onClick="toggleElement('lundeskole');">
+		<div class="marker-info" id="lundeskole">
+		  <a class="title">Lunde Skole</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker ins" style="top:320px; left:1200px;" onClick="toggleElement('boernehave');">
+		<div class="marker-info" id="boernehave">
+		  <a class="title">Børnehave</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker ins ple" style="top:320px; left:1150px;" onClick="toggleElement('plejehjem');">
+		<div class="marker-info" id="plejehjem">
+		  <a class="title">Plejehjem</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+        </div>
+        </div>
+        <div class="marker ins ple" style="top:320px; left:1250px;" onClick="toggleElement('hjemmehjaelpe');">
+		<div class="marker-info" id="hjemmehjaelpe">
+		  <a class="title">Hjemmehjælpe</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker ins vir" style="top:320px; left:1200px;" onClick="toggleElement('sparekassen');">
+		<div class="marker-info" id="sparekassen">
+		  <a class="title">Sparekassen</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker ins" style="top:320px; left:1150px;" onClick="toggleElement('lundekirke');">
+		<div class="marker-info" id="lundekirke">
+		  <a class="title">Lunde Kirke</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+        </div>
+        </div>
+        <div class="marker but" style="top:320px; left:1250px;" onClick="toggleElement('skhair');">
+		<div class="marker-info" id="skhair">
+		  <a class="title">SK Hair Design Frisør</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker but" style="top:320px; left:1200px;" onClick="toggleElement('kirkenskorshaer');">
+		<div class="marker-info" id="kirkenskorshaer">
+		  <a class="title">Kirkens Korshær</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker spo" style="top:320px; left:1150px;" onClick="toggleElement('lundestadion');">
+		<div class="marker-info" id="lundestadion">
+		  <a class="title">Lunde Stadion</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+        </div>
+        </div>
+        <div class="marker spo" style="top:320px; left:1250px;" onClick="toggleElement('lundeboldklub');">
+		<div class="marker-info" id="lundeboldklub">
+		  <a class="title">Lunde Boldklub</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker spo" style="top:320px; left:1200px;" onClick="toggleElement('legeplads');">
+		<div class="marker-info" id="legeplads">
+		  <a class="title">Legeplads/Multibane</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker spo" style="top:320px; left:1150px;" onClick="toggleElement('kaelkebakke');">
+		<div class="marker-info" id="kaelkebakke">
+		  <a class="title">Kælkebakke</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+        </div>
+        </div>
+        <div class="marker spo" style="top:320px; left:1250px;" onClick="toggleElement('lundeforsamlingshus');">
+		<div class="marker-info" id="lundeforsamlingshus">
+		  <a class="title">Lunde Forsamlingshus</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker vir" style="top:320px; left:1200px;" onClick="toggleElement('danishagro');">
+		<div class="marker-info" id="danishagro">
+		  <a class="title">Danish Agro</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+		</div>
+		<div class="marker vir" style="top:320px; left:1150px;" onClick="toggleElement('annebergslimtrae');">
+		<div class="marker-info" id="annebergslimtrae">
+		  <a class="title">Annebergs Limtræ</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+        </div>
+        </div>
+        <div class="marker vir" style="top:320px; left:1250px;" onClick="toggleElement('lundevvs');">
+		<div class="marker-info" id="lundevvs">
+		  <a class="title">Lunde VVS</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+        </div>
+    </div>
+</div>
+	
+</section>
+ 
+ <section>
+    
+    <div id="checkboxes">
+        <label>
+            <input type="checkbox" value="mad" />
+            Mad og indkøb
+        </label>
+        <label>
+            <input type="checkbox" value="tra" />
+            Transport
+        </label>
+        <label>
+            <input type="checkbox" value="ins" />
+            Institution
+        </label>
+        <label>
+            <input type="checkbox" value="but" />
+            Butikker
+        </label>
+        <label>
+            <input type="checkbox" value="ple" />
+            Pleje og sundhed
+        </label>
+        <label>
+            <input type="checkbox" value="spo" />
+            Sport og fritid
+        </label>
+        <label>
+            <input type="checkbox" value="vir" />
+            Virksomheder
+        </label>
+    </div>
+    
+</section>
+ 
+ <script>
+      document.getElementById('checkboxes').addEventListener('click', showHide);
+
+      function showHide(e) {
+        if (e.target.type !== "checkbox") {
+        return;
+        }
+
+        var p = document.getElementById('popup');
+
+        if (e.target.checked) {
+            p.classList.add("show-" + e.target.value);
+        } else {
+            p.classList.remove("show-" + e.target.value);
+        }
+}
+</script> 
   
   <section>
 	<h3 class="text-center">Masser at byde på</h3>

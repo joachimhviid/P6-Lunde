@@ -344,6 +344,50 @@ main .imageText {
 	overflow: hidden;
 }
 
+#popup div {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+    -webkit-transition: opacity 0.5s linear;
+    -moz-transition: opacity 0.5s linear;
+    -o-transition: opacity 0.5s linear;
+
+}
+
+#popup.show-mad .mad {
+    display: block;
+    opacity: 1;
+}
+
+#popup.show-tra .tra {
+    display: block;
+    opacity: 1;
+}
+
+#popup.show-ins .ins {
+    display: block;
+    opacity: 1;
+}
+
+#popup.show-but .but {
+    display: block;
+    opacity: 1;
+}
+
+#popup.show-ple .ple {
+    display: block;
+    opacity: 1;
+}
+
+#popup.show-spo .spo {
+    display: block;
+    opacity: 1;
+}
+
+#popup.show-vir .vir {
+    display: block;
+    opacity: 1;
+}
 
 footer {
 	display: inline-block;

@@ -84,8 +84,9 @@ function toggleDrop() {
 
   <section>
 	<h3 class="text-center">Gå på opdagelse</h3>
-	<div class="canvas">
-	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
+	<div class="canvas no-select" id="viewer">
+	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" draggable="false" />
+	  <div class="marker"></div>
 	</div>
   </section>
   
@@ -214,6 +215,19 @@ function toggleDrop() {
   </div>
 
 </footer>
+
+<script src="js/RequestAnimationFrame.js"></script>
+<script src="js/TouchScroll.js"></script>
+<script>
+var viewer = new TouchScroll();
+viewer.init({
+	id: 'viewer',
+	draggable: true,
+	wait: false
+});
+document.getElementById("viewer").scrollTop = 240;
+document.getElementById("viewer").scrollLeft = 340;
+</script>
 
 </body>
 </html>

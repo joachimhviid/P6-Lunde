@@ -6,6 +6,7 @@ const maxSpace = 500;
 var animItems = [squareTree, circleTree, coneTree];
 // var animations = [squareAnim(), circleAnim(), coneAnim()];
 var i = 0;
+var itemPos = window.innerWidth;
 
 var squareLoc = square.getBoundingClientRect();
 var circleLoc = circle.getBoundingClientRect();
@@ -13,13 +14,25 @@ var coneLoc = cone.getBoundingClientRect();
 
 var randomDelay = Math.random()*5000;
 
-var itemInterval = setInterval(nextItem,randomDelay);
+var itemInterval;
 
-function nextItem() {
-  animItems[i].className = 'item scrollelement';
-  i = (i+1)%animItems.length;
-  animItems[i].className = 'item scrollelement show';
+function nextItem(time) {
+  itemPos--;
+  animItems[0].style.left = itemPos + 'px';
+  console.log('Frame passed');
+  if(time < 10000) {
+    itemInterval = window.requestAnimationFrame(nextItem);
+  } else {
+    itemPos = window.innerWidth;
+    cancelAnimationFrame(itemInterval);
+  }
 }
+
+itemInterval = window.requestAnimationFrame(nextItem);
+
+// animItems[i].className = 'item scrollelement';
+// i = (i+1)%animItems.length;
+// animItems[i].className = 'item scrollelement show';
 
 // Sets initial margins
 // var squareMargin = (Math.random() * maxSpace) + 'px';

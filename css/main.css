@@ -258,10 +258,6 @@ main .canvas .map {
     cursor: -webkit-grabbing;
 }
 
-.grid-xs-4{
-    position: relative; width: 25%;
-}
-
 .card-image{
     width:100%; 
     height:100%; 

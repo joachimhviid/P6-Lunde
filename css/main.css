@@ -3,7 +3,6 @@
 
 body {
 	background: #FFFFFF; 
-	padding: 30px;
 	font-family: OpenSans;
 	font-weight: 400;
 	overflow-x: hidden !important;
@@ -418,9 +417,6 @@ footer .copyright .item a {
 
 /* Smaller than tablet */
 @media (max-width: 750px) {
-	body {
-		padding: 0px;
-	}
 	nav li .tab, nav li .btn {
 		display: none;
 	}
@@ -429,6 +425,14 @@ footer .copyright .item a {
 	}
 	header .header-promote img {
 		display: none;
+	}
+	main .canvas {
+		overflow: scroll;
+	}
+	main .canvas::-webkit-scrollbar {
+		width: 0px; 
+		height: 0px; 
+		background: transparent; 
 	}
 	
 

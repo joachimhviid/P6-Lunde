@@ -118,7 +118,6 @@ main {
 	max-width: 960px; /*960px*/
 	margin: 40px auto 0px;
 	padding: 0 30px;
-  overflow: hidden;
 }
 
 h1.errormsg {
@@ -160,49 +159,49 @@ p.errormsg {
 .item {
   background-repeat: no-repeat;
   display: inline-block;
-  position: relative;
+  position: absolute;
 }
 
 .floor {
   width: 100vw;
   height: 10px;
   background-color: #f7f7f7;
+  position: relative;
+  top: 200px;
 }
 
 #square {
-  background-image: url("square-tree-dark.svg");
+  /* background-image: url("square-tree-dark.svg"); */
   width:100px;
   height: 200px;
-  /* left: calc(100% - 100px); */
+  left: calc(100% - 100px);
   z-index: 3;
 }
 
 #circle {
-  background-image: url("circle-tree-dark.svg");
+  /* background-image: url("circle-tree-dark.svg"); */
   width:100px;
   height: 200px;
-  position: relative;
-  top: 13px;
-  /* left: calc(76% - 100px); */
+  top: 15px;
+  left: calc(88% - 100px);
   z-index: 2;
 }
 
 #cone {
-  background-image: url("cone-tree-dark.svg");
+  /* background-image: url("cone-tree-dark.svg"); */
   width:100px;
   height: 200px;
-  position: relative;
-  top: 19px;
-  /* left: calc(53% - 100px); */
+  top: 17px;
+  left: calc(76% - 100px);
   z-index: 1;
 }
 
 #sign {
-  background-image: url("lunde-dark.svg");
-  width: 100px;
-  height: 60px;
-  top: 143px;
-  /* left: calc(51% - 100px); */
+  /* background-image: url("lunde-dark.svg"); */
+  /* width: 100px; */
+  height: 100px;
+  top: 103px;
+  /* left: calc(85% - 100px); */
   z-index: 4;
 }
 

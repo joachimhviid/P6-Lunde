@@ -173,7 +173,7 @@ p.errormsg {
 #square {
   /* background-image: url("square-tree-dark.svg"); */
   width:100px;
-  height: 200px;
+  /* height: 200px; */
   left: calc(100% - 100px);
   z-index: 3;
 }
@@ -181,7 +181,7 @@ p.errormsg {
 #circle {
   /* background-image: url("circle-tree-dark.svg"); */
   width:100px;
-  height: 200px;
+  /* height: 200px; */
   top: 15px;
   left: calc(88% - 100px);
   z-index: 2;
@@ -190,8 +190,8 @@ p.errormsg {
 #cone {
   /* background-image: url("cone-tree-dark.svg"); */
   width:100px;
-  height: 200px;
-  top: 17px;
+  /* height: 200px; */
+  top: 19px;
   left: calc(76% - 100px);
   z-index: 1;
 }

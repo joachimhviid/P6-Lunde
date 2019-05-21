@@ -1,31 +1,29 @@
 #popup p {
     display: none;
-    /*height: 0;
-	overflow: hidden;
-	transition: height 350ms ease-in-out;
-    */
+    opacity: .1;
+    transition: opacity 750ms ease-in-out;
 }
 
 #popup.show-fam .fam {
     display: block;
-    /*height: 20px;
-    */
+    opacity: 1;
+    transition: opacity 750ms ease-in-out;
 }
 
 #popup.show-mad .mad {
     display: block;
-    /*height: 20px;
-    */
+    opacity: 1;
+    transition: opacity 750ms ease-in-out;
 }
 
 #popup.show-ins .ins {
     display: block;
-    /*height: 20px;
-    */
+    opacity: 1;
+    transition: opacity 750ms ease-in-out;
 }
 
 #popup.show-gro .gro {
     display: block;
-    /*height: 20px;
-    */
+    opacity: 1;
+    transition: opacity 750ms ease-in-out;
 }

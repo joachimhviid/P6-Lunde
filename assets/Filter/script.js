@@ -14,6 +14,5 @@ function showHide(e) {
     }
 }
 
-
 /* https://stackoverflow.com/questions/32325932/in-vanilla-javascript-how-do-i-show-hide-spans-with-multiple-class-names 
  */

@@ -36,7 +36,7 @@
 		  <li><a class="tab" href="#">Om byen</a></li>
 		  <li><a class="tab" href="#">Kontakt</a></li>
 		  <li><a class="btn" href="boliger">Find bolig</a></li>
-		  <li><a class="dropdown" onClick="toggleDrop();">
+		  <li><a class="dropdown" onClick="toggleElement('mobileNav');">
 		    <div class="line-1"></div> <div class="line-2"></div> <div class="line-3"></div> 
 		  </a></li>
 		</ul>
@@ -52,13 +52,6 @@
 	  <li><a class="btn" href="boliger">Find bolig</a></li>
 	</ul>
   </div>
-  
-<script>
-function toggleDrop() {
-  var x = document.getElementById("mobileNav");
-  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
-}
-</script>
 
   <div class="container">
     <div class="row">
@@ -85,8 +78,17 @@ function toggleDrop() {
   <section>
 	<h3 class="text-center">Gå på opdagelse</h3>
 	<div class="canvas no-select" id="viewer">
-	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" draggable="false" />
-	  <div class="marker"></div>
+	
+	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
+	  
+	  <div class="marker" style="top:360px; left:1250px;" onClick="toggleElement('minkoebmand');">
+		<div class="marker-info" id="minkoebmand">
+		  <a class="title">MinKøbmand</a>
+		  <a class="desc">Tekst til hver facilitet som kort giver et indblik og øger lysten til at besøge byen</a>
+		  <a class="extra">Åben alle hverdage <br>7:30 - 19:00</a>
+		</div>
+	  </div>
+	  
 	</div>
   </section>
   
@@ -94,57 +96,58 @@ function toggleDrop() {
 	<h3 class="text-center">Masser at byde på</h3>
 	<div class="container">
 	  <div class="row">
-
+          
+        <div class="grid-xs-6 grid-md-4 grid-lg-3">
+            <img class="card-image" src="images/dagligvarebutik.webp" alt="Min Købmand">
+            <div class="imageText-header"><p>MinKøbmand</p></div>
+            <div class="imageText"><p>Den lokale købmand, hvor de daglige indkøb kan klares.</p></div>
+        </div>
 		
-		<div class="grid-xs-4">
-            <img class="card-image" src="images/lunde-skole.jpg" alt="Lunde skole">
-            <div class="imageText-header"><p>Lunde Skole</p></div>
-            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div> 
-        </div>
-
-        <div class="grid-xs-4">
-            <img class="card-image" src="images/lunde-grillhytte.jpg" alt="Grillhytte" >
-            <div class="imageText-header"><p>Grillhytte</p></div>
-            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div> 
-        </div>
-
-        <div class="grid-xs-4">
-            <img class="card-image" src="images/lunde-stadion.jpg" alt="Lunde Stadion">
-            <div class="imageText-header"><p>Lunde Stadion</p></div>
-            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div> 
-        </div>
-
-        <div class="grid-xs-4">
-            <img class="card-image" src="images/lunde-station.jpg" alt="Lunde Togstation">
-            <div class="imageText-header"><p>Lunde Togstation</p></div>
-            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div>
+		<div class="grid-xs-6 grid-md-4 grid-lg-3">
+            <img class="card-image" src="images/lunde-skole.webp" alt="Lunde skole">
+            <div class="imageText-header"><p>Blåbjergskolen</p></div>
+            <div class="imageText"><p>Lundes flotte skole med dygtigt personale og trivsel i højsædet.</p></div> 
         </div>
           
-
-        <div class="grid-xs-4">
-            <img class="card-image" src="images/dagligvarebutik.jpg" alt="Min Købmand">
-            <div class="imageText-header"><p>Min Købmand</p></div>
-            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div>
-        </div>
-
-        <div class="grid-xs-4">
-            <img class="card-image" src="images/lunde-kro.jpg" alt="Lunde Kro">
-            <div class="imageText-header"><p>Lunde Kro</p></div>
-            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div>
-        </div>
-
-        <div class="grid-xs-4">
-            <img class="card-image" src="images/lunde-kindergarden.jpg" alt="Lunde børnhave">
+        <div class="grid-xs-6 grid-md-4 grid-lg-3">
+            <img class="card-image" src="images/lunde-kindergarden.webp" alt="Lunde børnhave">
              <div class="imageText-header"><p>Lunde Børnehave</p></div>
-            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div>
+            <div class="imageText"><p>Pæn børnehave med søde pædagoger og en legeplads med plads til alle.</p></div>
         </div>
-
-        <div class="grid-xs-4">
-            <img class="card-image" src="images/lunde-boldklub.jpg" alt="Lunde Boldklub">
+          
+        <div class="grid-xs-6 grid-md-4 grid-lg-3">
+            <img class="card-image" src="images/lunde-station.webp" alt="Lunde Togstation">
+            <div class="imageText-header"><p>Togstation (vestbanen)</p></div>
+            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div>
+            <div class="imageText-header"><p>Lunde Togstation</p></div>
+            <div class="imageText"><p>Togstationen byder på hyppige forbindelser til Varde og Esbjerg.</p></div>
+        </div>
+          
+        <div class="grid-xs-6 grid-md-4 grid-lg-3">
+            <img class="card-image" src="images/lunde-kro.webp" alt="Lunde Kro">
+            <div class="imageText-header"><p>Lunde Kro</p></div>
+            <div class="imageText"><p>Den lokale kro står altid klar med lidt godt til ganen.</p></div>
+        </div>
+          
+        <div class="grid-xs-6 grid-md-4 grid-lg-3">
+            <img class="card-image" src="images/lunde-stadion.webp" alt="Lunde Stadion">
+            <div class="imageText-header"><p>Stadion</p></div>
+            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div> 
+            <div class="imageText-header"><p>Lunde Stadion</p></div>
+            <div class="imageText"><p>Her er der mulighed for at få pulsen op og sved på panden.</p></div> 
+        </div>
+          
+        <div class="grid-xs-6 grid-md-4 grid-lg-3">
+            <img class="card-image" src="images/lunde-boldklub.webp" alt="Lunde Boldklub">
               <div class="imageText-header"><p>Lunde Boldklub</p></div>
-            <div class="imageText"><p>Den lokale brugs og et vigtigt samlingspunkt</p></div>
+            <div class="imageText"><p>En hyggelig boldklub med engagerede deltagere og adgang til stadion.</p></div>
         </div>
 
+        <div class="grid-xs-6 grid-md-4 grid-lg-3">
+            <img class="card-image" src="images/grillhytte.webp" alt="Grillhytte" >
+            <div class="imageText-header"><p>Grillhytte</p></div>
+            <div class="imageText"><p>Et af Lundes nye tiltag: en fælles grillhytte som frit kan benyttes.</p></div> 
+        </div>
 		
 		<div class="grid-xs-12 text-center">
 		  <a class="button-primary-dark text-center" href="faciliteter">Se alle</a>
@@ -216,6 +219,13 @@ function toggleDrop() {
 
 </footer>
 
+<script>
+function toggleElement(id) {
+  let x = document.getElementById(id);
+  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
+}
+</script>
+
 <script src="js/RequestAnimationFrame.js"></script>
 <script src="js/TouchScroll.js"></script>
 <script>
@@ -225,7 +235,7 @@ viewer.init({
 	draggable: true,
 	wait: false
 });
-document.getElementById("viewer").scrollTop = 240;
+document.getElementById("viewer").scrollTop = 120;
 document.getElementById("viewer").scrollLeft = 340;
 </script>
 

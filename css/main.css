@@ -233,21 +233,85 @@ main .canvas {
 	width: 100%;
 	height: 520px;
 	overflow: hidden;
+	position: relative;
 }
 main .canvas .map {
 	display: inline-block;
 	width: 2400px;
 	height: auto;
 	z-index: 10;
+	position: absolute;
+}
+main .canvas .marker {
+	display: inline-block;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border: 4.5px solid #4C4C51;
+	z-index: 11;
+} main .canvas .marker:hover {
+	cursor: pointer;
+}
+
+main .canvas .marker .marker-info {
+	display: none;
+	padding: 18px 15px;
+	width: 180px;
+	background: #FFFFFF;
+	border: 1px solid #B5B5B5;
+	z-index: 12;
+	position: absolute;
+	bottom: 30px;
+	left: -87px;
+}
+main .canvas .marker .marker-info:after, main .canvas .marker .marker-info:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+} main .canvas .marker .marker-info:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-top-color: #FFFFFF;
+	border-width: 10px;
+	margin-left: -10px;
+} main .canvas .marker .marker-info:before {
+	border-color: rgba(181, 181, 181, 0);
+	border-top-color: #C1C1BF;
+	border-width: 12px;
+	margin-left: -12px;
+}
+main .canvas .marker .marker-info .title {
+	display: inline-block;
+	width: 100%;
+	font-size: 15px;
+	color: #333333;
+	font-weight: 600;
+	margin-bottom: 12px;
+	line-height: 1.2;
+}
+main .canvas .marker .marker-info .desc {
+	display: inline-block;
+	width: 100%;
+	font-size: 13px;
+	color: #666666;
+	font-weight: 400;
+	margin-bottom: 12px;
+	line-height: 1.2;
+}
+main .canvas .marker .marker-info .extra {
+	display: inline-block;
+	width: 100%;
+	font-size: 13px;
+	color: #333333;
+	font-weight: 400;
+	line-height: 1.2;
 }
 
 .no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
     cursor: move;
     cursor: -moz-grab;
     cursor: -webkit-grab;
@@ -258,31 +322,27 @@ main .canvas .map {
     cursor: -webkit-grabbing;
 }
 
-.grid-xs-4{
-    position: relative; width: 25%;
-}
-
-.card-image{
-    width:100%; 
-    height:100%; 
-  -webkit-filter: grayscale(25%);
+main .card-image {
+    width: 100%; 
+    height: auto; 
+	-webkit-filter: grayscale(25%);
     -webkit-filter: contrast(80%);
-  filter: grayscale(25%);
+	filter: grayscale(25%);
     filter:contrast(80%);
-    }
-
-.imageText-header{
+}
+main .imageText-header {
     font-size: 13px;
     font-weight: bold;
     padding-top: 12px;
 }
-
-.imageText{   
-    padding-top: 4px;
-    padding-bottom: 25px;
+main .imageText { 
+	display: inline-block;
+    margin-top: 5px;
     font-size: 13px;
-         
-    }
+    line-height: 1.2;
+	height: 60px;
+	overflow: hidden;
+}
 
 
 footer {
@@ -454,7 +514,14 @@ footer .copyright .item a {
 
 /* Larger than tablet */
 @media (min-width: 750px) {
-	
+	.no-select {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
 }
 
 /* Larger than desktop */

@@ -266,10 +266,20 @@ main .canvas .map {
 .card-image{
     width:100%; 
     height:100%; 
+  -webkit-filter: grayscale(25%);
+    -webkit-filter: contrast(80%);
+  filter: grayscale(25%);
+    filter:contrast(80%);
     }
-    
-.imageText{   
+
+.imageText-header{
+    font-size: 13px;
+    font-weight: bold;
     padding-top: 12px;
+}
+
+.imageText{   
+    padding-top: 4px;
     padding-bottom: 25px;
     font-size: 13px;
          

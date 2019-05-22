@@ -344,6 +344,15 @@ main .imageText {
 	overflow: hidden;
 }
 
+
+.reveal {
+  opacity: 0.0;
+  transition: opacity 1s;
+}
+.reveal.inview {
+  opacity: 1;
+}
+
 #popup div {
     display: none;
     opacity: 0;
@@ -353,6 +362,8 @@ main .imageText {
     -o-transition: opacity 0.5s linear;
 
 }
+
+
 
 #popup.show-mad .mad {
     display: block;

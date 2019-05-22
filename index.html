@@ -314,9 +314,22 @@
 </section>
  
 <script>
+var targetclasses = event.target.classList;
+var values = document.getElementsByClassName['mad', 'tra', 'ins', 'but', 'ple', 'spo', 'vir'];
+var found = false;
+    
+document.addEventListener('change', function(checkclasses) {
+    for (values i = 0; i < values.length; i++) {
+          if (targetclasses.contains(values[i]) > -1) {
+              found = true;
+              break;
+          }
+      }
+}
+
 document.addEventListener('change', function(event) {
   if (event.target.classList.contains( 'mapCheck' ) ) {
-    if(event.target.checked) {
+    if(event.target.checked) && (found = true) {
 	
       // Checkbox is checked
 	  for (x of document.querySelectorAll('.marker.' + event.target.value)) { 
@@ -329,8 +342,9 @@ document.addEventListener('change', function(event) {
 	  for (x of document.querySelectorAll('.marker.' + event.target.value)) { 
 		x.style.display = "none";
 	  }
-		
+	
     }
+  
   }
 });
 </script> 

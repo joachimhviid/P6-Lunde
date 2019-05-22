@@ -288,53 +288,64 @@
   
     <h4 class="checkheader">Vælg en katagori</h4>
 	
-	<input class="mapCheck" type="checkbox" value="mad" id="cbMad" checked />
-	<label for="cbMad">Mad og drikke</label>
+	<input class="mapCheck" type="checkbox" value="mad" id="CBmad" checked />
+	<label for="CBmad">Mad og drikke</label>
 	
-	<input class="mapCheck" type="checkbox" value="tra" id="cbTra" checked />
-	<label for="cbTra">Transport</label>
+	<input class="mapCheck" type="checkbox" value="tra" id="CBtra" checked />
+	<label for="CBtra">Transport</label>
 	
-	<input class="mapCheck" type="checkbox" value="ins" id="cbIns" checked />
-	<label for="cbIns">Institution</label>
+	<input class="mapCheck" type="checkbox" value="ins" id="CBins" checked />
+	<label for="CBins">Institution</label>
 	
-	<input class="mapCheck" type="checkbox" value="but" id="cbBut" checked />
-	<label for="cbBut">Butikker</label>
+	<input class="mapCheck" type="checkbox" value="but" id="CBbut" checked />
+	<label for="CBbut">Butikker</label>
 	
-	<input class="mapCheck" type="checkbox" value="ple" id="cbPle" checked />
-	<label for="cbPle">Pleje og sundhed</label>
+	<input class="mapCheck" type="checkbox" value="ple" id="CBple" checked />
+	<label for="CBple">Pleje og sundhed</label>
 	
-	<input class="mapCheck" type="checkbox" value="spo" id="cbSpo" checked />
-	<label for="cbSpo">Sport og fritid</label>
+	<input class="mapCheck" type="checkbox" value="spo" id="CBspo" checked />
+	<label for="CBspo">Sport og fritid</label>
 	
-	<input class="mapCheck" type="checkbox" value="vir" id="cbVir" checked />
-	<label for="cbVir">Virksomheder</label>
+	<input class="mapCheck" type="checkbox" value="vir" id="CBvir" checked />
+	<label for="CBvir">Virksomheder</label>
 	
     </div>
    
 </section>
  
 <script>
+var arr = ['mad', 'tra', 'ins', 'but', 'ple', 'spo', 'vir'];
 
 document.addEventListener('change', function(event) {
   if (event.target.classList.contains( 'mapCheck' ) ) {
+    
+    var checkedArr = [];
+    for(let i=0, n=arr.length; i < n; i++) {
+
+      if(document.getElementById("CB"+arr[i]).checked) {
+        checkedArr.push(arr[i]);
+      }
+    }
+
     if(event.target.checked){
-	
       // Checkbox is checked
 	  for (x of document.querySelectorAll('.marker.' + event.target.value)) { 
 		x.style.display = "inline-block";
 	  }
-	  
     } else {
-	
       // Checkbox is not checked
 	  for (x of document.querySelectorAll('.marker.' + event.target.value)) { 
-		x.style.display = "none";
-        if event.target.classList.contains['mad', 'tra', 'ins', 'but', 'ple', 'spo', 'vir']
-          x.style.display = "inline-block";
+        let status=0;
+        for(let i=0, n=checkedArr.length; i < n; i++) {
+          if(x.classList.contains(checkedArr[i])) {
+            status++;
+          }
+        }
+        if(status == 0) {
+          x.style.display = "none";
+        }
 	  }
-	
     }
-  
   }
 });
 </script> 

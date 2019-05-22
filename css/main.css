@@ -390,9 +390,13 @@ main .imageText {
 }
 
 #checkboxes {
+    position: relative;
+    left: 20px;
+    top: 20px;
     background-color: #313133;
     display: block;
     width: 200px;
+    z-index: 1;
 }
 
 .checkText {

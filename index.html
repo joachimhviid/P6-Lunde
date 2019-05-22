@@ -77,9 +77,49 @@
 
   <section>
 	<h3 class="text-center">Gå på opdagelse</h3>
+	
 	<div class="canvas no-select" id="viewer">
 	
 	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
+	  
+    <div id="checkboxes">
+    <div class="imageText-header"><p>Vælg en katagori</p></div>
+    <label class="checkText">
+        <input type="checkbox" value="mad" />
+        <span class="checkmark"></span>
+        Mad og drikke
+    </label>
+    <label class="checkText">
+        <input type="checkbox" value="tra" />
+        <span class="checkmark"></span>
+        Transport
+    </label>
+    <label class="checkText">
+        <input type="checkbox" value="ins" />
+        <span class="checkmark"></span>
+        Institution
+    </label>
+    <label class="checkText">
+        <input type="checkbox" value="but" />
+        <span class="checkmark"></span>
+        Butikker
+    </label>
+    <label class="checkText">
+        <input type="checkbox" value="ple" />
+        <span class="checkmark"></span>
+        Pleje og sundhed
+    </label>
+    <label class="checkText">
+        <input type="checkbox" value="spo" />
+        <span class="checkmark"></span>
+        Sport og fritid
+    </label>
+    <label class="checkText">
+        <input type="checkbox" value="vir" />
+        <span class="checkmark"></span>
+        Virksomheder
+    </label>
+    </div>
 	  
 	  <div id="popup">
         <div class="marker mad but" style="top:373px; left:1247px;" onClick="toggleElement('minkoebmand');">
@@ -258,44 +298,7 @@
 		</div>
         </div>
     </div>
-</div>
-
-<div id="checkboxes">
-    <label class="checkText">
-        <input type="checkbox" value="mad" />
-        <span class="checkmark"></span>
-        Mad og drikke
-    </label>
-    <label class="checkText">
-        <input type="checkbox" value="tra" />
-        <span class="checkmark"></span>
-        Transport
-    </label>
-    <label class="checkText">
-        <input type="checkbox" value="ins" />
-        <span class="checkmark"></span>
-        Institution
-    </label>
-    <label class="checkText">
-        <input type="checkbox" value="but" />
-        <span class="checkmark"></span>
-        Butikker
-    </label>
-    <label class="checkText">
-        <input type="checkbox" value="ple" />
-        <span class="checkmark"></span>
-        Pleje og sundhed
-    </label>
-    <label class="checkText">
-        <input type="checkbox" value="spo" />
-        <span class="checkmark"></span>
-        Sport og fritid
-    </label>
-    <label class="checkText">
-        <input type="checkbox" value="vir" />
-        <span class="checkmark"></span>
-        Virksomheder
-    </label>
+      
 </div>
    
 </section>

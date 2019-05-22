@@ -158,7 +158,8 @@ p.errormsg {
 
 /* Floor lines */
 .floor {
-  width: 40vw;
+  width: 100%;
+	max-width: 960px;
   height: 6px;
   background-color: #f7f7f7;
   position: relative;

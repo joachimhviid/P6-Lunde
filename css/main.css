@@ -354,56 +354,48 @@ main .imageText {
 }
 
 #popup div {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s linear;
-    -webkit-transition: opacity 0.5s linear;
-    -moz-transition: opacity 0.5s linear;
-    -o-transition: opacity 0.5s linear;
+    display: block;
 
 }
 
 
 
 #popup.show-mad .mad {
-    display: block;
-    opacity: 1;
+    display: none;
 }
 
 #popup.show-tra .tra {
-    display: block;
-    opacity: 1;
+    display: none;
 }
 
 #popup.show-ins .ins {
-    display: block;
-    opacity: 1;
+    display: none;
 }
 
 #popup.show-but .but {
-    display: block;
-    opacity: 1;
+    display: none;
 }
 
 #popup.show-ple .ple {
-    display: block;
-    opacity: 1;
+    display: none;
 }
 
 #popup.show-spo .spo {
-    display: block;
-    opacity: 1;
+    display: none;
 }
 
 #popup.show-vir .vir {
-    display: block;
-    opacity: 1;
+    display: none;
 }
 
 #checkboxes {
+    position: relative;
+    left: 20px;
+    top: 20px;
     background-color: #313133;
     display: block;
     width: 200px;
+    z-index: 1;
 }
 
 .checkText {

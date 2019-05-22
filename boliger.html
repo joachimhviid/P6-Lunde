@@ -173,4 +173,26 @@ function toggleDrop() {
 </footer>
 
 </body>
+    
+<script>
+function isElementInViewport(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document. documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document. documentElement.clientWidth)
+  );
+}
+
+function updateInView() {
+  for (x of document.querySelectorAll('.reveal')) {
+    if(isElementInViewport(x)) { x.classList.add('inview') }
+  }
+}
+
+document.body.onscroll = updateInView;
+updateInView();
+</script>
+    
 </html>

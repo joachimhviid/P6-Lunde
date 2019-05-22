@@ -7,13 +7,13 @@ var animItems = [squareTree, circleTree, coneTree, signPost];
 
 var itemInterval;
 var slowAnimation;
-var frameRate = 18;
+const frameRate = 18;
 var isPlaying = false;
 var skew = 0;
 
 function breeze() {
+  // Timer that slows down the frameRate of animation
   slowAnimation = setTimeout(function() {
-
     if (skew >= -15) {
       for(var i = 0; i <= 5; i++) {
         skew--;
@@ -30,6 +30,7 @@ function breeze() {
   }, 1000 / frameRate);
 }
 
+// Onclick event
 function mouseClicked() {
   if(isPlaying) {
     isPlaying = false;

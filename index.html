@@ -288,68 +288,51 @@
   
     <h4 class="checkheader">Vælg en katagori</h4>
 	
-    <label class="checkText">
-        <input type="checkbox" value="mad" />
-        <span class="checkmark"></span>
-        Mad og drikke
-    </label>
+	<input class="mapCheck" type="checkbox" value="mad" id="cbMad" checked />
+	<label for="cbMad">Mad og drikke</label>
 	
-    <label class="checkText">
-        <input type="checkbox" value="tra" />
-        <span class="checkmark"></span>
-        Transport
-    </label>
+	<input class="mapCheck" type="checkbox" value="tra" id="cbTra" checked />
+	<label for="cbTra">Transport</label>
 	
-    <label class="checkText">
-        <input type="checkbox" value="ins" />
-        <span class="checkmark"></span>
-        Institution
-    </label>
+	<input class="mapCheck" type="checkbox" value="ins" id="cbIns" checked />
+	<label for="cbIns">Institution</label>
 	
-    <label class="checkText">
-        <input type="checkbox" value="but" />
-        <span class="checkmark"></span>
-        Butikker
-    </label>
+	<input class="mapCheck" type="checkbox" value="but" id="cbBut" checked />
+	<label for="cbBut">Butikker</label>
 	
-    <label class="checkText">
-        <input type="checkbox" value="ple" />
-        <span class="checkmark"></span>
-        Pleje og sundhed
-    </label>
+	<input class="mapCheck" type="checkbox" value="ple" id="cbPle" checked />
+	<label for="cbPle">Pleje og sundhed</label>
 	
-    <label class="checkText">
-        <input type="checkbox" value="spo" />
-        <span class="checkmark"></span>
-        Sport og fritid
-    </label>
+	<input class="mapCheck" type="checkbox" value="spo" id="cbSpo" checked />
+	<label for="cbSpo">Sport og fritid</label>
 	
-    <label class="checkText">
-        <input type="checkbox" value="vir" />
-        <span class="checkmark"></span>
-        Virksomheder
-    </label>
+	<input class="mapCheck" type="checkbox" value="vir" id="cbVir" checked />
+	<label for="cbVir">Virksomheder</label>
 	
     </div>
    
 </section>
  
- <script>
-document.getElementById('checkboxes').addEventListener('click', showHide);
-
-function showHide(e) {
-  if (e.target.type !== "checkbox") {
-	return;
+<script>
+document.addEventListener('change', function(event) {
+  if (event.target.classList.contains( 'mapCheck' ) ) {
+    if(event.target.checked) {
+	
+      // Checkbox is checked
+	  for (x of document.querySelectorAll('.marker.' + event.target.value)) { 
+		x.style.display = "inline-block";
+	  }
+	  
+    } else {
+	
+      // Checkbox is not checked
+	  for (x of document.querySelectorAll('.marker.' + event.target.value)) { 
+		x.style.display = "none";
+	  }
+		
+    }
   }
-
-  var p = document.getElementById('popup');
-
-  if (e.target.checked) {
-	p.classList.add("show-" + e.target.value);
-  } else {
-	p.classList.remove("show-" + e.target.value);
-  }
-}
+});
 </script> 
   
   <section>

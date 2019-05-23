@@ -38,6 +38,20 @@
 	// Combine prices
 	$matches['price'] = array_merge($matches['promoted-price'], $matches['normal-price']);
 	
+	// Complete links to internal listings
+	foreach($matches['url'] as $key=>$url) {
+	  if(substr($url, 0, 4) !== "http") {
+		$matches['url'][$key] = "http://edc.dk" . $url;
+	  }
+	}
+	
+	// Complete links to images
+	foreach($matches['img'] as $key=>$img) {
+	  if(substr($img, 0, 4) !== "http") {
+		$matches['img'][$key] = "http:" . $img;
+	  }
+	}
+	
 	return($matches);
 
   }
@@ -59,8 +73,8 @@
   $timecount = microtime(true)-$msc;
   
   $output = array(
+    "num"     => count($results),
     "time"    => round($timecount, 5),
-	"num"     => count($results),
 	"results" => $results
   );
   

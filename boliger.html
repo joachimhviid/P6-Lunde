@@ -75,41 +75,7 @@
 	<h3 class="search-title" id="jsonNum">Søger efter boliger</h3>
 	<a class="search-time" id="jsonTime">Vent venligst</a>
 	  <div class="row" id="jsonResults">
-		
-		<!--<div class="grid-xs-12"> <img id="loader" src="images/loading.gif" alt="Loading" /> </div>-->
-		
-		<div class="tile grid-xs-3">
-		  <div class="image">
-		    <a href="http://edc.dk/alle-boliger/nørre-nebel/6830/skjedsbølvej-41/?sagsnr=68304223" target="_blank">
-			  <img src="//billeder.edc.dk/edcmedia/2019/05-May/15/83e26da5-84b8-455a-bc71-1ae028e26b05_Size300x200.jpg" alt="Skjedsbølvej 41, Lunde" />
-			</a>
-		  </div>
-		  <div class="info">
-		    <a class="title">Skjedsbølvej 41, Lunde</a>
-			<a class="desc">Pris: 2.595.000,-</a>
-		  </div>
-		</div>
-	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
-		</div>
-	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
-		</div>
-	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
-		</div>
-		
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
-		</div>
-	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
-		</div>
-	  
+		<div class="grid-xs-12"> <img id="loader" src="images/loading.gif" alt="Loading" /> </div>
 	  </div>
 	</div>
   </section>
@@ -173,6 +139,38 @@ function toggleElement(id) {
   let x = document.getElementById(id);
   x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
 }
+</script>
+
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'php/crawl.php');
+xhr.onload = function() {
+  if (xhr.status === 200) {
+	
+	if(xhr.responseText == "error") {
+	  document.getElementById('jsonResults').innerHTML = 'Hovsa, der skete en fejl (crawl.error)';
+	  return;
+	}
+	
+	var info = JSON.parse(xhr.responseText);
+	
+	document.getElementById('jsonNum').innerHTML = 'Vi fandt '+info['num']+' boliger i Lunde og omegn';
+	document.getElementById('jsonTime').innerHTML = 'Søgningen tog '+info['time']+' sekunder';
+	
+	document.getElementById('jsonResults').innerHTML = "";
+
+	for (let i=0, n=info['results'].length; i < n; i++) {
+	  document.getElementById('jsonResults').innerHTML += '<div class="tile grid-xs-6 grid-md-4 grid-lg-3"> <div class="image"><a href="'+info['results'][i]['url']+'" target="_blank"><img src="'+info['results'][i]['img']+'" alt="'+info['results'][i]['address']+'" /></a></div> <div class="info"><a class="title">'+info['results'][i]['address']+'</a><a class="desc">Pris: '+info['results'][i]['price']+',-</a></div> </div>';
+	}
+	
+  } else {
+	document.getElementById('jsonResults').innerHTML = 'Hovsa, der skete en fejl (http.'+xhr.status+')';
+  }
+};
+
+document.getElementById('loader').onload = function() {
+  xhr.send();
+};
 </script>
 
 </body>

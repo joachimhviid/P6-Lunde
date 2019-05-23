@@ -394,6 +394,7 @@ main .search-time {
 	font-size: 18px;
 	color: #B5B3B3;
 }
+
 main .tile {
 	margin-bottom: 30px;
 }
@@ -401,6 +402,31 @@ main .tile .image {
 	width: 100%;
 	min-height: 100px;
 	background: #EDEDED;
+} main .tile .image img {
+	width: 100%;
+	height: auto;
+	-webkit-filter: grayscale(25%);
+	filter: grayscale(25%);
+}
+main .tile .info {
+	width: 100%;
+	margin-top: 15px;
+}
+main .tile .info .title {
+	display: inline-block;
+	width: 100%;
+	font-size: 20px;
+	font-weight: 600;
+	color: #333333;
+	line-height: 1.2;
+}
+main .tile .info .desc {
+	display: inline-block;
+	width: 100%;
+	font-size: 14px;
+	color: #919191;
+	line-height: 1.2;
+	margin-top: 4px;
 }
 #jsonResults #loader {
 	-webkit-filter: invert(50%);

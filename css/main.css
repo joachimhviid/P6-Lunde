@@ -314,7 +314,7 @@ main .checkbox-contain {
 	background: #414142;
 	width: 280px;
 	z-index: 99;
-	position: absolute;
+	position: relative;
 	margin: -500px 0px 0px 20px;
 }
 main .checkbox-contain .drop-button {
@@ -362,13 +362,12 @@ main #mapDrop .check label {
     cursor: -webkit-grabbing;
 }
 
+
 main .card-image {
     width: 100%; 
     height: auto; 
 	-webkit-filter: grayscale(25%);
-    -webkit-filter: contrast(80%);
 	filter: grayscale(25%);
-    filter:contrast(80%);
 }
 main .imageText-header {
     font-size: 13px;
@@ -382,6 +381,33 @@ main .imageText {
     line-height: 1.2;
 	height: 60px;
 	overflow: hidden;
+}
+
+
+main .search-title {
+	margin: 0px 0px 8px 0px;
+}
+main .search-time {
+	display: inline-block;
+	width: 100%;
+	margin: 0px 0px 40px 0px;
+	font-size: 18px;
+	color: #B5B3B3;
+}
+main .tile {
+	margin-bottom: 30px;
+}
+main .tile .image {
+	width: 100%;
+	min-height: 100px;
+	background: #EDEDED;
+}
+#jsonResults #loader {
+	-webkit-filter: invert(50%);
+	filter: invert(50%);
+	width: 70px; 
+	height: auto;
+	margin-bottom: 30px;
 }
 
 

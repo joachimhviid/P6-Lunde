@@ -78,7 +78,7 @@
   <section>
 	<h3 class="text-center">Gå på opdagelse</h3>
 	
-	<div class="canvas no-select" id="viewer">
+	<div class="canvas no-select dragscroll" id="viewer">
 	
 	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
 	  
@@ -487,15 +487,8 @@ function toggleElement(id) {
 }
 </script>
 
-<script src="js/RequestAnimationFrame.js"></script>
-<script src="js/TouchScroll.js"></script>
+<script type="text/javascript" src="js/dragscroll.js"></script>
 <script>
-var viewer = new TouchScroll();
-viewer.init({
-	id: 'viewer',
-	draggable: true,
-	wait: false
-});
 document.getElementById("viewer").scrollTop = 120;
 document.getElementById("viewer").scrollLeft = 340;
 </script>

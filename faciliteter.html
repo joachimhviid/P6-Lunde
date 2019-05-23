@@ -52,13 +52,6 @@
 	  <li><a class="btn" href="boliger">Find bolig</a></li>
 	</ul>
   </div>
-  
-<script>
-function toggleDrop() {
-  var x = document.getElementById("mobileNav");
-  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
-}
-</script>
 
   <div class="container">
     <div class="row">
@@ -400,6 +393,13 @@ function toggleDrop() {
   </div>
 
 </footer>
+
+<script>
+function toggleElement(id) {
+  let x = document.getElementById(id);
+  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
+}
+</script>
 
 </body>
     

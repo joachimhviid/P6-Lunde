@@ -52,13 +52,6 @@
 	  <li><a class="btn" href="boliger">Find bolig</a></li>
 	</ul>
   </div>
-  
-<script>
-function toggleDrop() {
-  var x = document.getElementById("mobileNav");
-  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
-}
-</script>
 
   <div class="container">
     <div class="row">
@@ -66,7 +59,7 @@ function toggleDrop() {
 		
 		<div class="grid-xs-12">
 		  <h1 class="title">Boliger til salg</h1>
-		  <p class="desc">Velkommen til Lunde, den måske hyggeligste lille by nær den Sydvestjyske kyst. Her er godt fællesskab, natur og vækst i højsædet. Med både muligheder for transport, indkøb og uddannelse, er Lunde et sikkert valg</p> 
+		  <p class="desc">Her ser du et udvalg af boliger til salg i Lunde og omegn, fra en række forskellige ejendomsmæglere. Bemærk at der muligvis er flere boliger end vist, så søg derfor også gerne selv og start din nye tilværelse i Lunde</p> 
 		</div>
 		
       </div>
@@ -79,11 +72,22 @@ function toggleDrop() {
   
   <section>
 	<div class="container">
-	<h3>Overskrift 1</h3>
-	  <div class="row">
-	
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+	<h3 class="search-title" id="jsonNum">Søger efter boliger</h3>
+	<a class="search-time" id="jsonTime">Vent venligst</a>
+	  <div class="row" id="jsonResults">
+		
+		<!--<div class="grid-xs-12"> <img id="loader" src="images/loading.gif" alt="Loading" /> </div>-->
+		
+		<div class="tile grid-xs-3">
+		  <div class="image">
+		    <a href="http://edc.dk/alle-boliger/nørre-nebel/6830/skjedsbølvej-41/?sagsnr=68304223" target="_blank">
+			  <img src="//billeder.edc.dk/edcmedia/2019/05-May/15/83e26da5-84b8-455a-bc71-1ae028e26b05_Size300x200.jpg" alt="Skjedsbølvej 41, Lunde" />
+			</a>
+		  </div>
+		  <div class="info">
+		    <a class="title">Skjedsbølvej 41, Lunde</a>
+			<a class="desc">Pris: 2.595.000,-</a>
+		  </div>
 		</div>
 	  
 		<div class="grid-xs-3">
@@ -163,6 +167,13 @@ function toggleDrop() {
   </div>
 
 </footer>
+
+<script>
+function toggleElement(id) {
+  let x = document.getElementById(id);
+  x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
+}
+</script>
 
 </body>
 </html>

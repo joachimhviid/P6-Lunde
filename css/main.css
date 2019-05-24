@@ -446,6 +446,14 @@ main p.paragraph {
 }
 
 
+#kontakt h3 {
+	margin: 0px 0px 25px 0px;
+}
+#kontakt a[href] {
+	margin: 0px 0px 30px 0px;
+}
+
+
 
 
 

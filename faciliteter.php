@@ -11,14 +11,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Icon -->
-  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#313133">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#313133">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <!--      -->
-  
-  <!-- Cookies -->
-  
-  <!--         -->
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css?v=<?php print filemtime("css/main.css"); ?>" />
 
 </head>
 <body>
@@ -72,7 +76,7 @@
   
   <section>
 	<div class="container">
-	<h3>Mad og drikke</h3>
+	  <h3>Mad og drikke</h3>
 	  <div class="row">
 	
         <div class="grid-xs-6 grid-md-4 grid-lg-3">
@@ -88,8 +92,8 @@
         </div>
           
 		<div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/dagligvarebutik.webp" alt="Min  Købmand">
-            <div class="imageText-header"><p>Min Købmand</p></div>
+            <img class="card-image" src="images/dagligvarebutik.webp" alt="MinKøbmand">
+            <div class="imageText-header"><p>MinKøbmand</p></div>
             <div class="imageText"><p>Den lokale købmand, hvor de daglige indkøb kan klares.</p></div>
         </div>
 	  
@@ -99,11 +103,11 @@
   
   <section>
 	<div class="container">
-	<h3>Transport</h3>
+	  <h3>Transport</h3>
 	  <div class="row">
           
         <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/autopartner.webp" alt="Lunde autoværksted">
+            <img class="card-image" src="images/autopartner.webp" alt="Lunde Autoværksted">
             <div class="imageText-header"><p>Lunde Autoværksted</p></div>
             <div class="imageText"><p>En del af AutoPartner med dygtiget personale og klar til at servicere dig.</p></div>
         </div>
@@ -144,9 +148,9 @@
 	</div>
   </section>
     
-    <section>
+  <section>
 	<div class="container">
-	<h3>Institutioner</h3>
+	  <h3>Institutioner</h3>
 	  <div class="row">
 	
 		<div class="grid-xs-6 grid-md-4 grid-lg-3">
@@ -180,8 +184,8 @@
         </div>
         
         <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/sparkassen.webp" alt="Sparekasse">
-            <div class="imageText-header"><p>Sparekasse</p></div>
+            <img class="card-image" src="images/sparkassen.webp" alt="Sparekassen">
+            <div class="imageText-header"><p>Sparekassen</p></div>
             <div class="imageText"><p>Få personlig kontakt med din bankrådgiver hos Sparnebel.</p></div>
         </div>
 	  
@@ -189,9 +193,9 @@
 	</div>
   </section>
     
-    <section>
+  <section>
 	<div class="container">
-	<h3>Butikker</h3>
+	  <h3>Butikker</h3>
 	  <div class="row">
 	
 		<div class="grid-xs-6 grid-md-4 grid-lg-3">
@@ -213,8 +217,8 @@
         </div>
 	  
         <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/dagligvarebutik.webp" alt="Min Købmand">
-            <div class="imageText-header"><p>Min Købmand</p></div>
+            <img class="card-image" src="images/dagligvarebutik.webp" alt="MinKøbmand">
+            <div class="imageText-header"><p>MinKøbmand</p></div>
             <div class="imageText"><p>Den lokale købmand, hvor de daglige indkøb kan klares.</p></div>
         </div>
           
@@ -224,9 +228,9 @@
 	</div>
   </section>
     
-    <section>
+  <section>
 	<div class="container">
-	<h3>Pleje og sundhed</h3>
+	  <h3>Pleje og sundhed</h3>
 	  <div class="row">
 	
         <div class="grid-xs-6 grid-md-4 grid-lg-3">
@@ -246,9 +250,9 @@
 	</div>
   </section>
     
-    <section>
+  <section>
 	<div class="container">
-	<h3>Sport og fritid</h3>
+	  <h3>Sport og fritid</h3>
 	  <div class="row">
 	
           
@@ -277,8 +281,8 @@
         </div>
           
         <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-stadion.webp" alt="Lunde Stadion">
-            <div class="imageText-header"><p>Lunde Stadion</p></div>
+            <img class="card-image" src="images/lunde-stadion.webp" alt="Stadion">
+            <div class="imageText-header"><p>Stadion</p></div>
             <div class="imageText"><p>Midt i byen ligger stadion, hvor der er plads til sport, leg og aktiviteter der ud over.</p></div> 
         </div>
           
@@ -288,9 +292,9 @@
   </section>
     
     
-    <section>
+  <section>
 	<div class="container">
-	<h3>Virksomheder</h3>
+	  <h3>Virksomheder</h3>
 	  <div class="row">
 	
 		<div class="grid-xs-6 grid-md-4 grid-lg-3">

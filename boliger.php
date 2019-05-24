@@ -3,22 +3,26 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Bag om byen - Lunde by</title>
-  <meta name="description" content="Bag om byen - Lunde by" />
+  <title>Boliger til salg - Lunde by</title>
+  <meta name="description" content="Boliger til salg - Lunde by" />
   <meta name="keywords" content="">
   <meta name="author" content="Lunde by" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Icon -->
-  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#313133">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#313133">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <!--      -->
-  
-  <!-- Cookies -->
-  
-  <!--         -->
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css?v=<?php print filemtime("css/main.css"); ?>" />
 
 </head>
 <body>
@@ -58,7 +62,8 @@
       <div class="grid-xs-12 header-content">
 		
 		<div class="grid-xs-12">
-		  <h1 class="title">Bag om byen</h1>
+		  <h1 class="title">Boliger til salg</h1>
+		  <p class="desc">Her ser du et udvalg af boliger til salg i Lunde og omegn, fra en række forskellige ejendomsmæglere. Bemærk at der muligvis er flere boliger end vist, så søg derfor også gerne selv og start din nye tilværelse i Lunde</p> 
 		</div>
 		
       </div>
@@ -68,26 +73,14 @@
 </header>
 
 <main>
-
+  
   <section>
 	<div class="container">
-	  <h3>Historien om Lunde Sogn</h3>
-	  <p class="paragraph">
-Allerede i 1877 begyndte man at holde møder om en jernbane vest for Varde. Der kom mange forslag til hvor banen kunne gå; nogle ville have den helt fra Varde til Nr. Nebel, men det kunne man ikke blive enige om på daværende tidspunkt.
-<br><br>
-Først i 1899 ved et møde den 10. november i Lunde Forsamlingshus, hvor der mødte ca. 100 op, blev man enig om den nuværende jernbanestrækning.
-<br><br>
-Det var heller ikke nemt at blive enige om fordeling af udgifterne og om hvor stationen i Lunde skulle ligge.
-Lunde og Kvong ville have den ved Lunde Kirke, men Nr. Nebel ville have den ved Lundager.
-<br><br>
-Det var ved et møde den 12. juni 1900 i Tingkro ved Outrup, at man sent om natten kl. 03.00 blev enig om placeringen. Det blev til ca. 1 km syd for Kirken, hvor den ligger endnu.
-<br><br>
-Selvom placeringen dengang var et øde sted, blev der hurtigt bygget i omegnen - først kroen og købmanden og efter flere og flere byggerier, blev Kirke By og Station til Lunde By.
-<br><br>
-Jernbanen åbnede den 13. marts 1903. 
-<br><br>
-<b>- Blaabjerg Lokalhistorisk Arkiv</b>
-	  </p> 
+	<h3 class="search-title" id="jsonNum">Søger efter boliger</h3>
+	<a class="search-time" id="jsonTime">Vent venligst</a>
+	  <div class="row" id="jsonResults">
+		<div class="grid-xs-12"> <img id="loader" src="images/loading.gif" alt="Loading" /> </div>
+	  </div>
 	</div>
   </section>
 
@@ -152,6 +145,37 @@ function toggleElement(id) {
 }
 </script>
 
+<script>
+var xhr = new XMLHttpRequest();
+xhr.open('GET', 'php/crawl.php');
+xhr.onload = function() {
+  if (xhr.status === 200) {
+	
+	if(xhr.responseText == "error") {
+	  document.getElementById('jsonResults').innerHTML = 'Hovsa, der skete en fejl (crawl.error)';
+	  return;
+	}
+	
+	var info = JSON.parse(xhr.responseText);
+	
+	document.getElementById('jsonNum').innerHTML = 'Vi fandt '+info['num']+' boliger i Lunde og omegn';
+	document.getElementById('jsonTime').innerHTML = 'Søgningen tog '+info['time']+' sekunder';
+	
+	document.getElementById('jsonResults').innerHTML = "";
+
+	for (let i=0, n=info['results'].length; i < n; i++) {
+	  document.getElementById('jsonResults').innerHTML += '<div class="tile grid-xs-6 grid-md-4 grid-lg-3"> <div class="image"><a href="'+info['results'][i]['url']+'" target="_blank"><img src="'+info['results'][i]['img']+'" alt="'+info['results'][i]['address']+'" /></a></div> <div class="info"><a class="title">'+info['results'][i]['address']+'</a><a class="desc">Pris: '+info['results'][i]['price']+',-</a></div> </div>';
+	}
+	
+  } else {
+	document.getElementById('jsonResults').innerHTML = 'Hovsa, der skete en fejl (http.'+xhr.status+')';
+  }
+};
+
+document.getElementById('loader').onload = function() {
+  xhr.send();
+};
+</script>
+
 </body>
-    
 </html>

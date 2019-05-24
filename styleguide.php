@@ -11,14 +11,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <!-- Icon -->
-  
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/site.webmanifest">
+  <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#313133">
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#313133">
+  <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
   <!--      -->
-  
-  <!-- Cookies -->
-  
-  <!--         -->
 
-  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/main.css?v=<?php print filemtime("css/main.css"); ?>" />
 
 </head>
 <body>
@@ -135,20 +139,36 @@
 		  <h3>Billeder</h3>
 		</div>
 		
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/dagligvarebutik.webp" alt="MinKøbmand" /> </div>
 		</div>
 	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-skole.webp" alt="Lunde skole" /> </div>
 		</div>
 		
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-kindergarden.webp" alt="Lunde børnhave" /> </div>
 		</div>
 	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-station.webp" alt="Togstation (Vestbanen)" /> </div>
+		</div>
+		
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-kro.webp" alt="Lunde Kro" /> </div>
+		</div>
+		
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-stadion.webp" alt="Lunde Stadion" /> </div>
+		</div>
+		
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/lunde-boldklub.webp" alt="Lunde Boldklub" /> </div>
+		</div>
+		
+		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
+		  <div class="image"> <img src="images/grillhytte.webp" alt="Grillhytte" /> </div>
 		</div>
 	  
 	  </div>
@@ -203,26 +223,6 @@
 	&lt;/div>
   &lt;/div>
 &lt;/nav></code></pre>
-		</div>
-	  
-	  </div>
-	</div>
-  </section>
-  
-  <section>
-	<div class="container">
-	  <div class="row">
-		
-		<div class="grid-xs-12">
-		  <h3>Forms</h3>
-		</div>
-		
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
-		</div>
-	  
-		<div class="grid-xs-3">
-		  <div style="width:100%;height:300px;background:#EDEDED;margin-bottom:30px;"></div>
 		</div>
 	  
 	  </div>

@@ -35,6 +35,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Farver</h3>
+		  <a class="explanation">Farverne på siden er holdt dæmpede og er primært hvide-grå-sorte nuancer. Dette er for at farver fra bykort og billeder er mere fremtrædende. Den grønne farve er brugt til elementer som skal have ekstra synlighed, herunder logo i footeren og call-to-action på forsiden.</a>
 		</div>
 		
 		<div class="grid-xs-4 grid-lg-2">
@@ -77,6 +78,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Typografi</h3>
+		  <a class="explanation">Sidens skrifttyper er ligeledes holdt simple for ikke at tage opmærksomhed fra det øvrige indhold. Der benyttes en font kaldet "ITC Avant Garde" til overskrifter og "OpenSans" til al øvrig tekst.</a>
 		</div>
 		
 		<div class="grid-xs-12 grid-lg-6">
@@ -115,6 +117,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Knapper</h3>
+		  <a class="explanation">Knapperne er lavet med samme firkantede og simple design som sidens øvrige elementer. Button-primary bruges når der skal skabes opmærksomhed, eksempelvis som call-to-action på forsiden. Button-primary-dark benyttes til alle øvrige knapper.</a>
 		</div>
 		
 		<div class="grid-xs-12 grid-lg-6">
@@ -137,6 +140,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Billeder</h3>
+		  <a class="explanation">Sidens billeder er alle opsat i grid og bruges til visning af faciliteter og boliger. På siden er der desuden tilknyttet overskrift og en lille sektion beskrivende tekst under hvert billede.</a>
 		</div>
 		
 		<div class="tile grid-xs-6 grid-md-4 grid-lg-3">
@@ -181,6 +185,7 @@
 		
 		<div class="grid-xs-12">
 		  <h3>Navigation</h3>
+		  <a class="explanation">Navigationen er opsat med fokus på læseretning. Til venstre er logoet for Lunde, som minder brugeren om hvad de kigger på. Derefter følger menupunkterne og til sidst et menupunkt opsat som knap, for at skabe mere opmærksomhed end de øvrige punkter. Navigationen er responsiv og menupunkterne folder sig sammen til en "hamburger-menu" når skærmens bredde er under 750px.</a>
 		</div>
 		
 		<div class="grid-xs-12">

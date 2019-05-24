@@ -526,6 +526,16 @@ footer .copyright .item a {
 
 
 
+#styleguide h3 {
+	margin: 0px 0px 15px 0px;
+}
+#styleguide .explanation {
+	display: inline-block;
+	width: 100%;
+	line-height: 1.4;
+	margin-bottom: 40px;
+}
+
 #styleguide code {
 	display: inline-block;
 	width: 100%;

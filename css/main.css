@@ -2,16 +2,16 @@
 @import url("structure.css");
 
 body {
-	background: #313133; 
+	background: #313133;
 	font-family: OpenSans;
 	font-weight: 400;
 	overflow-x: hidden;
-} 
+}
 
 
 header {
 	display: inline-block;
-	width: 100%; 
+	width: 100%;
 	min-height: 50px;
 	background: none;
 }
@@ -38,7 +38,7 @@ nav .right {
 }
 
 nav .logo img {
-	height: 44px; 
+	height: 44px;
 	padding: 8px 0px;
 	width: auto;
 	opacity: 1;
@@ -50,8 +50,8 @@ nav ul {
 
 nav li {
     float: left;
-	height: 44px; 
-	display: -webkit-box; 
+	height: 44px;
+	display: -webkit-box;
 	-webkit-box-align: center;
 }
 nav .tab, nav .btn {
@@ -102,7 +102,7 @@ nav li .dropdown:hover {
 	cursor: pointer;
 } nav li .dropdown:hover div {
 	width: 100%;
-} 
+}
 
 
 .mobile {
@@ -175,14 +175,14 @@ header .header-content {
 	min-width: 10px;
 	padding: 40px 0px 60px 0px;
 	color: #F7F7F7;
-} 
+}
 header#splash .header-content {
 	padding: 80px 0px 100px 0px;
 }
 header .header-content .header-image {
 	width: 85%;
 	height: auto;
-} 
+}
 header .header-content .title {
 	display: block;
 	font-family: ITC-AvantGarde;
@@ -190,20 +190,20 @@ header .header-content .title {
 	font-weight: 700;
 	margin-top: 40px;
 	margin-bottom: 25px;
-} 
+}
 header .header-content .desc {
 	display: block;
 	font-size: 22px;
 	font-weight: 100;
 	line-height: 1.35;
 	margin-bottom: 20px;
-} 
+}
 
 
 main {
 	background: #FFFFFF;
 	display: inline-block;
-	width: 100%; 
+	width: 100%;
 	min-height: 50px;
 	color: #333333;
 	padding-bottom: 100px;
@@ -212,7 +212,7 @@ main {
 main section {
 	margin-top: 100px;
 	display: inline-block;
-	width: 100%; 
+	width: 100%;
 	min-height: 50px;
 }
 main section h1, main section h2, main section h3 {
@@ -226,6 +226,10 @@ main section h3 {
 }
 main section h3.text-center {
 	margin: 0px 30px 40px 30px;
+}
+
+section .tile {
+	margin-bottom: 30px;
 }
 
 main .canvas {
@@ -340,14 +344,14 @@ main .checkbox-contain .drop-button img {
 } main .checkbox-contain .drop-content {
 	padding: 12px 0px;
     display: none;
-} 
+}
 main #mapDrop .check {
-	display: inline-block; 
+	display: inline-block;
 	width: 100%;
 	padding: 6px 20px;
 }
 main #mapDrop .check label {
-	display: inline-block; 
+	display: inline-block;
 	color: #EDEDED;
 	margin-left: 4px;
 	font-size: 14px;
@@ -366,20 +370,20 @@ main #mapDrop .check label {
 
 
 main .card-image {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: 200px;
 	-webkit-filter: grayscale(25%);
 	filter: grayscale(25%);
 }
 main .imageText-header {
-    font-size: 13px;
+    font-size: 0.8em;
     font-weight: bold;
     padding-top: 12px;
 }
-main .imageText { 
+main .imageText {
 	display: inline-block;
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 0.8em;
     line-height: 1.2;
 	height: 60px;
 	overflow: hidden;
@@ -433,7 +437,7 @@ main .tile .info .desc {
 #jsonResults #loader {
 	-webkit-filter: invert(50%);
 	filter: invert(50%);
-	width: 70px; 
+	width: 70px;
 	height: auto;
 	margin-bottom: 30px;
 }
@@ -474,7 +478,7 @@ main p.paragraph {
 
 footer {
 	display: inline-block;
-	width: 100%; 
+	width: 100%;
 	min-height: 50px;
 	background: none;
 	padding: 60px 0px 20px 0px;
@@ -522,7 +526,7 @@ footer .copyright .item a {
 	font-size: 11px;
 	line-height: 18px;
 	display: inline-block;
-} 
+}
 
 
 
@@ -541,7 +545,7 @@ footer .copyright .item a {
 	width: 100%;
 	background: #F1F1F1;
 	border: 1px solid #E1E1E1;
-	padding: 18px 20px; 
+	padding: 18px 20px;
 	color: #222222;
 	font-size: 14px;
 	line-height: 1.5;
@@ -608,7 +612,7 @@ footer .copyright .item a {
 
 /* Smaller than desktop */
 @media (max-width: 980px) {
-	
+
 }
 
 /* Smaller than tablet */
@@ -626,11 +630,11 @@ footer .copyright .item a {
 		overflow: scroll;
 	}
 	main .canvas::-webkit-scrollbar {
-		width: 0px; 
-		height: 0px; 
-		background: transparent; 
+		width: 0px;
+		height: 0px;
+		background: transparent;
 	}
-	
+
 
 	footer {
 		padding: 30px 0px 20px 0px;
@@ -639,13 +643,13 @@ footer .copyright .item a {
 
 /* Smaller than mobile */
 @media (max-width: 400px) {
-	
+
 }
 
 
 /* Larger than mobile */
 @media (min-width: 400px) {
-	
+
 }
 
 /* Larger than tablet */
@@ -662,7 +666,5 @@ footer .copyright .item a {
 
 /* Larger than desktop */
 @media (min-width: 980px) {
-	
+
 }
-
-

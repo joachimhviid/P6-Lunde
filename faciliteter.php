@@ -82,6 +82,7 @@
         <div class="grid-xs-6 grid-md-4 grid-lg-3">
           <picture>
             <source srcset="images/grillhytte.webp" type="image/webp">
+            <source srcset="images/fallbacks/grillhytte.jpg" type="image/jpeg">
             <img class="card-image" src="images/fallbacks/grillhytte.jpg" alt="Grillhytte" >
           </picture>
             <div class="imageText-header"><p>Grillhytte</p></div>

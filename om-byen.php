@@ -30,33 +30,38 @@
 <header>
 
   <nav>
-	<div class="container-full">
-	  <div class="left">
-		<a class="logo" href="index"><img src="images/lunde-by.svg" alt="Lunde By" /></a>
-	  </div>
-	  <div class="right">
-		<ul id="nav">
-		  <li><a class="tab" href="http://www.lundenyt.dk/" target="_blank">Events & projekter</a></li>
-		  <li><a class="tab" href="om-byen">Om byen</a></li>
-		  <li><a class="tab" href="kontakt">Kontakt</a></li>
-		  <li><a class="btn" href="boliger">Find bolig</a></li>
-		  <li><a class="dropdown" onClick="toggleElement('mobileNav');">
-		    <div class="line-1"></div> <div class="line-2"></div> <div class="line-3"></div>
-		  </a></li>
-		</ul>
-	  </div>
-	</div>
+    <div class="container-full">
+      <div class="left">
+        <a class="logo" href="index"><img src="images/lunde-by.svg" alt="Lunde By" /></a>
+      </div>
+      <div class="right">
+        <ul id="nav">
+          <li><a class="tab" href="faciliteter">Faciliteter</a></li>
+          <li><a class="tab" href="http://www.lundenyt.dk/" target="_blank">Events & projekter</a></li>
+          <li><a class="tab" href="om-byen">Om byen</a></li>
+          <li><a class="tab" href="kontakt">Kontakt</a></li>
+          <li><a class="btn" href="boliger">Find bolig</a></li>
+          <li><a class="dropdown" onClick="toggleElement('mobileNav');">
+              <div class="line-1"></div>
+              <div class="line-2"></div>
+              <div class="line-3"></div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <div class="mobile" id="mobileNav">
-	<ul>
-	  <li><a class="tab" href="http://www.lundenyt.dk/" target="_blank">Events & projekter</a></li>
-	  <li><a class="tab" href="om-byen">Om byen</a></li>
-	  <li><a class="tab" href="kontakt">Kontakt</a></li>
-	  <li><a class="btn" href="boliger">Find bolig</a></li>
-	</ul>
+    <ul>
+      <li><a class="tab" href="faciliteter">Faciliteter</a></li>
+      <li><a class="tab" href="http://www.lundenyt.dk/" target="_blank">Events & projekter</a></li>
+      <li><a class="tab" href="om-byen">Om byen</a></li>
+      <li><a class="tab" href="kontakt">Kontakt</a></li>
+      <li><a class="btn" href="boliger">Find bolig</a></li>
+    </ul>
   </div>
-
+  <div class="hero-container">
+  </div>
   <div class="container">
     <div class="row">
       <div class="grid-xs-12 header-content">

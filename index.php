@@ -85,7 +85,10 @@
   </header>
 
   <main>
-
+<div class="stickyarrow">
+  <p>Scroll ned for mere</p>
+  <img class="downarrow" src="images/arrow.svg" alt="Pil der pejer nedad">
+</div>
     <section>
       <h3 class="text-center">Gå på opdagelse</h3>
       <div class="mapcontainer">

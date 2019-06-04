@@ -60,7 +60,7 @@ nav .tab, nav .btn {
 nav li .tab {
   display: block;
   color: #E8E8E8;
-  font-size: 14px;
+  font-size: 0.875em;
   text-decoration: none;
   transition: color 0.3s, border-bottom 0.2s;
   box-sizing: border-box;
@@ -79,7 +79,7 @@ nav li .btn {
   box-sizing: border-box;
   text-decoration: none;
   color: #F7F7F7;
-  font-size: 15px;
+  font-size: 0.9375em;
   border: 1px solid #F7F7F7;
   padding: 13px 20px;
   transition: color 0.3s, background 0.3s, border 0.3s;
@@ -147,7 +147,7 @@ nav li .dropdown:hover div {
   transition: background 0.3s;
   box-sizing: border-box;
   padding: 22px 30px;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .mobile li .tab:hover, .mobile li .btn:hover {
@@ -161,7 +161,7 @@ nav li .dropdown:hover div {
   box-sizing: border-box;
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 1em;
   background: #3E9B67;
   margin-top: 15px;
   padding: 16px 30px;
@@ -178,7 +178,7 @@ nav li .dropdown:hover div {
   box-sizing: border-box;
   text-decoration: none;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 1em;
   background: #313133;
   margin-top: 15px;
   padding: 16px 30px;
@@ -213,7 +213,7 @@ header .header-content .header-image {
 header .header-content .title {
   display: block;
   font-family: ITC-AvantGarde;
-  font-size: 44px;
+  font-size: 2.75em;
   font-weight: 700;
   margin-top: 40px;
   padding-left: 10px;
@@ -223,7 +223,7 @@ header .header-content .title {
 
 header .header-content .desc {
   display: block;
-  font-size: 22px;
+  font-size: 1.375em;
   font-weight: 100;
   line-height: 1.35;
   padding-left: 10px;
@@ -238,7 +238,7 @@ header .header-content .desc {
   background-image: url("../images/leaves-hero.jpg");
   background-size: cover;
   width: 100%;
-  height: 500px;
+  height: 100%;
 }
 
 main {
@@ -264,12 +264,32 @@ main section h1, main section h2, main section h3 {
 }
 
 main section h3 {
-  font-size: 40px;
+  font-size: 2.5em;
   margin: 0px 0px 40px 0px;
 }
 
 main section h3.text-center {
   margin: 0px 30px 40px 30px;
+}
+
+.stickyarrow {
+  position: absolute;
+  right: 20px;
+  top: 550px;
+}
+
+.stickyarrow p {
+  position: relative;
+  right: 40px;
+  color: white;
+}
+
+.downarrow {
+  transform: rotate(90deg);
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 section .tile {
@@ -356,7 +376,7 @@ main .canvas .marker .marker-info:before {
 main .canvas .marker .marker-info .title {
   display: inline-block;
   width: 100%;
-  font-size: 15px;
+  font-size: 0.9375em;
   color: #333333;
   font-weight: 600;
   margin-bottom: 12px;
@@ -366,7 +386,7 @@ main .canvas .marker .marker-info .title {
 main .canvas .marker .marker-info .desc {
   display: inline-block;
   width: 100%;
-  font-size: 13px;
+  font-size: 0.8125em;
   color: #666666;
   font-weight: 400;
   margin-bottom: 12px;
@@ -376,7 +396,7 @@ main .canvas .marker .marker-info .desc {
 main .canvas .marker .marker-info .extra {
   display: inline-block;
   width: 100%;
-  font-size: 13px;
+  font-size: 0.8125em;
   color: #333333;
   font-weight: 400;
   line-height: 1.2;
@@ -394,7 +414,7 @@ main .checkbox-contain {
 main .checkbox-contain .drop-button {
   display: inline-block;
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 1em;
   color: #F7F7F7;
   width: 100%;
   padding: 20px 26px;
@@ -429,7 +449,7 @@ main #mapDrop .check label {
   display: inline-block;
   color: #EDEDED;
   margin-left: 4px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .no-select {
@@ -474,7 +494,7 @@ main .search-time {
   display: inline-block;
   width: 100%;
   margin: 0px 0px 40px 0px;
-  font-size: 18px;
+  font-size: 1.125em;
   color: #B5B3B3;
 }
 
@@ -503,7 +523,7 @@ main .tile .info {
 main .tile .info .title {
   display: inline-block;
   width: 100%;
-  font-size: 20px;
+  font-size: 1.25em;
   font-weight: 600;
   color: #333333;
   line-height: 1.2;
@@ -512,7 +532,7 @@ main .tile .info .title {
 main .tile .info .desc {
   display: inline-block;
   width: 100%;
-  font-size: 14px;
+  font-size: 0.875em;
   color: #919191;
   line-height: 1.2;
   margin-top: 4px;
@@ -531,7 +551,7 @@ main .tile .info .desc {
 }
 
 main p.paragraph {
-  font-size: 18px;
+  font-size: 1.125em;
   color: #333333;
   line-height: 1.3;
 }
@@ -584,7 +604,7 @@ footer .menu .item {
 
 footer .menu .item .title {
   color: #FFFFFF;
-  font-size: 15px;
+  font-size: 0.9375em;
   font-weight: 300;
   display: block;
   margin-bottom: 12px;
@@ -592,7 +612,7 @@ footer .menu .item .title {
 
 footer .menu .item .link {
   color: #8C8C99;
-  font-size: 13px;
+  font-size: 0.8125em;
   font-weight: 400;
   text-decoration: none;
   display: block;
@@ -613,7 +633,7 @@ footer .copyright .item {
 
 footer .copyright .item a {
   color: #75757F;
-  font-size: 11px;
+  font-size: 0.6875em;
   line-height: 18px;
   display: inline-block;
 }
@@ -636,7 +656,7 @@ footer .copyright .item a {
   border: 1px solid #E1E1E1;
   padding: 18px 20px;
   color: #222222;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 1.5;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -720,6 +740,10 @@ footer .copyright .item a {
 
   footer {
     padding: 30px 0px 20px 0px;
+  }
+
+  .stickyarrow {
+    display: none;
   }
 }
 

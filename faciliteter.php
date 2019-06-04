@@ -275,7 +275,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/krike.webp" alt="Lunde Kirke">
+            <picture>
+              <source srcset="images/krike.webp" type="image/webp">
+              <source srcset="images/fallbacks/krike.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/krike.jpg" alt="Lunde Kirke">
+            </picture>
             <div class="imageText-header">
               <p>Lunde Kirke</p>
             </div>
@@ -285,7 +289,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/plejehjem.webp" alt="Plejehjem">
+            <picture>
+              <source srcset="images/plejehjem.webp" type="image/webp">
+              <source srcset="images/fallbacks/plejehjem.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/plejehjem.jpg" alt="Plejehjem">
+            </picture>
             <div class="imageText-header">
               <p>Plejehjem</p>
             </div>
@@ -295,7 +303,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/sparkassen.webp" alt="Sparekassen">
+            <picture>
+              <source srcset="images/sparkassen.webp" type="image/webp">
+              <source srcset="images/fallbacks/sparkassen.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/sparkassen.jpg" alt="Sparekassen">
+            </picture>
             <div class="imageText-header">
               <p>Sparekassen</p>
             </div>
@@ -314,7 +326,11 @@
         <div class="row">
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-fri.webp" alt="Frisør SK Hair Design">
+            <picture>
+              <source srcset="images/lunde-fri.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-fri.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-fri.jpg" alt="Frisør SK Hair Design">
+            </picture>
             <div class="imageText-header">
               <p>Frisør SK Hair Design</p>
             </div>
@@ -324,7 +340,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/kirkens-korsh%C3%A6r.webp" alt="Kirkens Korshær">
+            <picture>
+              <source srcset="images/kirkens-korsh%C3%A6r.webp" type="image/webp">
+              <source srcset="images/fallbacks/kirkens-korsh%C3%A6r.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/kirkens-korsh%C3%A6r.jpg" alt="Kirkens Korshær">
+            </picture>
             <div class="imageText-header">
               <p>Kirkens Korshær</p>
             </div>
@@ -334,7 +354,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-kro.webp" alt="Lunde Kro">
+            <picture>
+              <source srcset="images/lunde-kro.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-kro.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-kro.jpg" alt="Lunde Kro">
+            </picture>
             <div class="imageText-header">
               <p>Lunde Kro</p>
             </div>
@@ -344,7 +368,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/dagligvarebutik.webp" alt="MinKøbmand">
+            <picture>
+              <source srcset="images/dagligvarebutik.webp" type="image/webp">
+              <source srcset="images/fallbacks/dagligvarebutik.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/dagligvarebutik.jpg" alt="MinKøbmand">
+            </picture>
             <div class="imageText-header">
               <p>MinKøbmand</p>
             </div>
@@ -365,7 +393,11 @@
         <div class="row">
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/hjemmeplejen.webp" alt="Hjemmehjælp">
+            <picture>
+              <source srcset="images/hjemmeplejen.webp" type="image/webp">
+              <source srcset="images/fallbacks/hjemmeplejen.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/hjemmeplejen.jpg" alt="Hjemmehjælp">
+            </picture>
             <div class="imageText-header">
               <p>Hjemmehjælp</p>
             </div>
@@ -375,7 +407,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/plejehjem.webp" alt="Plejehjem">
+            <picture>
+              <source srcset="images/plejehjem.webp" type="image/webp">
+              <source srcset="images/fallbacks/plejehjem.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/plejehjem.jpg" alt="Plejehjem">
+            </picture>
             <div class="imageText-header">
               <p>Plejehjem</p>
             </div>
@@ -396,7 +432,11 @@
 
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/grillhytte.webp" alt="Grillhytte">
+            <picture>
+              <source srcset="images/grillhytte.webp" type="image/webp">
+              <source srcset="images/fallbacks/grillhytte.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/grillhytte.jpg" alt="Grillhytte">
+            </picture>
             <div class="imageText-header">
               <p>Grillhytte</p>
             </div>
@@ -406,7 +446,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/kaelkebakke.webp" alt="Kælkebakke">
+            <picture>
+              <source srcset="images/kaelkebakke.webp" type="image/webp">
+              <source srcset="images/fallbacks/kaelkebakke.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/kaelkebakke.jpg" alt="Kælkebakke">
+            </picture>
             <div class="imageText-header">
               <p>Kælkebakke</p>
             </div>
@@ -416,7 +460,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-boldklub.webp" alt="Lunde Boldklub">
+            <picture>
+              <source srcset="images/lunde-boldklub.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-boldklub.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-boldklub.jpg" alt="Lunde Boldklub">
+            </picture>
             <div class="imageText-header">
               <p>Lunde Boldklub</p>
             </div>
@@ -426,7 +474,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/legeplads.webp" alt="Legeplads/Multibane">
+            <picture>
+              <source srcset="images/legeplads.webp" type="image/webp">
+              <source srcset="images/fallbacks/legeplads.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/legeplads.jpg" alt="Legeplads/Multibane">
+            </picture>
             <div class="imageText-header">
               <p>Legeplads/Multibane</p>
             </div>
@@ -436,7 +488,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-stadion.webp" alt="Stadion">
+            <picture>
+              <source srcset="images/lunde-stadion.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-stadion.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-stadion.jpg" alt="Stadion">
+            </picture>
             <div class="imageText-header">
               <p>Stadion</p>
             </div>
@@ -457,7 +513,11 @@
         <div class="row">
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/anneberg.webp" alt="Anneberg Limtræ">
+            <picture>
+              <source srcset="images/anneberg.webp" type="image/webp">
+              <source srcset="images/fallbacks/anneberg.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/anneberg.jpg" alt="Anneberg Limtræ">
+            </picture>
             <div class="imageText-header">
               <p>Anneberg Limtræ</p>
             </div>
@@ -467,7 +527,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/dabish.agro.webp" alt="Danish Agro">
+            <picture>
+              <source srcset="images/dabish.agro.webp" type="image/webp">
+              <source srcset="images/fallbacks/dabish.agro.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/dabish.agro.jpg" alt="Danish Agro">
+            </picture>
             <div class="imageText-header">
               <p>Danish Agro</p>
             </div>
@@ -477,7 +541,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-fri.webp" alt="Frisør SK Hair Design">
+            <picture>
+              <source srcset="images/lunde-fri.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-fri.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-fri.jpg" alt="Frisør SK Hair Design">
+            </picture>
             <div class="imageText-header">
               <p>Frisør SK Hair Design</p>
             </div>
@@ -487,7 +555,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-maskincenter.webp" alt="Lunde Maskincenter">
+            <picture>
+              <source srcset="images/lunde-maskincenter.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-maskincenter.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-maskincenter.jpg" alt="Lunde Maskincenter">
+            </picture>
             <div class="imageText-header">
               <p>Lunde Maskincenter</p>
             </div>
@@ -497,7 +569,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-maskinstation.webp" alt="Lunde Maskinstation">
+            <picture>
+              <source srcset="images/lunde-maskinstation.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-maskinstation.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-maskinstation.jpg" alt="Lunde Maskinstation">
+            </picture>
             <div class="imageText-header">
               <p>Lunde Entr. og Maskinstation</p>
             </div>
@@ -507,7 +583,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/lunde-vvs.webp" alt="Lunde VVS">
+            <picture>
+              <source srcset="images/lunde-vvs.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-vvs.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-vvs.jpg" alt="Lunde VVS">
+            </picture>
             <div class="imageText-header">
               <p>Lunde VVS</p>
             </div>
@@ -517,7 +597,11 @@
           </div>
 
           <div class="grid-xs-6 grid-md-4 grid-lg-3">
-            <img class="card-image" src="images/sparkassen.webp" alt="Sparekassen">
+            <picture>
+              <source srcset="images/sparkassen.webp" type="image/webp">
+              <source srcset="images/fallbacks/sparkassen.jpg" type="image/jpg">
+            <img class="card-image" src="images/fallbacks/sparkassen.jpg" alt="Sparekassen">
+          </picture>
             <div class="imageText-header">
               <p>Sparekassen</p>
             </div>

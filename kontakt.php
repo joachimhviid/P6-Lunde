@@ -79,7 +79,7 @@
 
   </header>
 
-  <main style="height: 100vh;">
+  <main>
 
     <section id="kontakt">
       <div class="container">

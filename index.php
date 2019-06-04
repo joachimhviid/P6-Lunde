@@ -382,7 +382,11 @@
         <div class="row">
 
           <div class="tile grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/dagligvarebutik.webp" alt="MinKøbmand">
+            <picture>
+              <source srcset="images/dagligvarebutik.webp" type="image/webp">
+              <source srcset="images/fallbacks/dagligvarebutik.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/dagligvarebutik.jpg" alt="MinKøbmand">
+            </picture>
             <div class="imageText-header">
               <p>MinKøbmand</p>
             </div>
@@ -392,7 +396,11 @@
           </div>
 
           <div class="tile grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-skole.webp" alt="Lunde skole">
+            <picture>
+              <source srcset="images/dagligvarebutik.webp" type="image/webp">
+              <source srcset="images/fallbacks/dagligvarebutik.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-skole.jpg" alt="Lunde skole">
+            </picture>
             <div class="imageText-header">
               <p>Blåbjergskolen</p>
             </div>
@@ -402,7 +410,11 @@
           </div>
 
           <div class="tile grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-kindergarden.webp" alt="Lunde Børnhave">
+            <picture>
+              <source srcset="images/lunde-kindergarden.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-kindergarden.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-kindergarden.jpg" alt="Lunde Børnhave">
+            </picture>
             <div class="imageText-header">
               <p>Lunde Børnehave</p>
             </div>
@@ -412,7 +424,11 @@
           </div>
 
           <div class="tile grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-station.webp" alt="Togstation (Vestbanen)">
+            <picture>
+              <source srcset="images/lunde-station.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-station.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-station.jpg" alt="Togstation (Vestbanen)">
+            </picture>
             <div class="imageText-header">
               <p>Togstation (Vestbanen)</p>
             </div>
@@ -422,7 +438,11 @@
           </div>
 
           <div class="tile grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-kro.webp" alt="Lunde Kro">
+            <picture>
+              <source srcset="images/lunde-kro.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-kro.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-kro.jpg" alt="Lunde Kro">
+            </picture>
             <div class="imageText-header">
               <p>Lunde Kro</p>
             </div>
@@ -432,7 +452,11 @@
           </div>
 
           <div class="tile grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-stadion.webp" alt="Stadion">
+            <picture>
+              <source srcset="images/lunde-stadion.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-stadion.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-stadion.jpg" alt="Stadion">
+            </picture>
             <div class="imageText-header">
               <p>Stadion</p>
             </div>
@@ -442,7 +466,11 @@
           </div>
 
           <div class="tile grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/lunde-boldklub.webp" alt="Lunde Boldklub">
+            <picture>
+              <source srcset="images/lunde-boldklub.webp" type="image/webp">
+              <source srcset="images/fallbacks/lunde-boldklub.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/lunde-boldklub.jpg" alt="Lunde Boldklub">
+            </picture>
             <div class="imageText-header">
               <p>Lunde Boldklub</p>
             </div>
@@ -452,7 +480,11 @@
           </div>
 
           <div class="tile grid-xs-6 grid-md-4 grid-lg-3 reveal">
-            <img class="card-image" src="images/grillhytte.webp" alt="Grillhytte">
+            <picture>
+              <source srcset="images/grillhytte.webp" type="image/webp">
+              <source srcset="images/fallbacks/grillhytte.jpg" type="image/jpg">
+              <img class="card-image" src="images/fallbacks/grillhytte.jpg" alt="Grillhytte">
+            </picture>
             <div class="imageText-header">
               <p>Grillhytte</p>
             </div>

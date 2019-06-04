@@ -96,7 +96,7 @@
 
           <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
 
-          <div class="marker mad but" style="top:373px; left:1247px;" onClick="toggleElement('minkoebmand');">
+          <div class="marker mad but" style="top:373px; left:1247px;" onClick="hideElements(); toggleElement('minkoebmand');">
             <div class="marker-info" id="minkoebmand">
               <a class="title">MinKøbmand</a>
               <a class="desc">Indkøbsmulighed for hver en smag til dagligdagens brug eller festen</a>
@@ -104,7 +104,7 @@
             </div>
           </div>
 
-          <div class="marker mad but" style="top:670px; left:1105px;" onClick="toggleElement('lundekro');">
+          <div class="marker mad but" style="top:670px; left:1105px;" onClick="hideElements(); toggleElement('lundekro');">
             <div class="marker-info" id="lundekro">
               <a class="title">Lunde Kro</a>
               <a class="desc">Den hyggelige lokale kro, hvor man kan spise middag eller komme til intimkoncerter med kendte navne</a>
@@ -112,7 +112,7 @@
             </div>
           </div>
 
-          <div class="marker mad spo" style="top:725px; left:1235px;" onClick="toggleElement('grillhytte');">
+          <div class="marker mad spo" style="top:725px; left:1235px;" onClick="hideElements(); toggleElement('grillhytte');">
             <div class="marker-info" id="grillhytte">
               <a class="title">Grill hytte</a>
               <a class="desc">Nyopført grillhytte med tilhørende shelters, som er til fri afbenyttelse for borgerne</a>
@@ -120,7 +120,7 @@
             </div>
           </div>
 
-          <div class="marker tra" style="top:675px; left:1080px;" onClick="toggleElement('togstation');">
+          <div class="marker tra" style="top:675px; left:1080px;" onClick="hideElements(); toggleElement('togstation');">
             <div class="marker-info" id="togstation">
               <a class="title">Togstation (Vestbanen)</a>
               <a class="desc">Afgang fra Lunde med Vestbanen en gang i timen</a>
@@ -128,7 +128,7 @@
             </div>
           </div>
 
-          <div class="marker tra" style="top:305px; left:1315px;" onClick="toggleElement('lundetaxi');">
+          <div class="marker tra" style="top:305px; left:1315px;" onClick="hideElements(); toggleElement('lundetaxi');">
             <div class="marker-info" id="lundetaxi">
               <a class="title">Lunde Taxi og Turistfart</a>
               <a class="desc">Den lokale taxiservice kan altid transportere dig til hver en lejlighed</a>
@@ -136,7 +136,7 @@
             </div>
           </div>
 
-          <div class="marker tra" style="top:372px; left:1264px;" onClick="toggleElement('goontankstation');">
+          <div class="marker tra" style="top:372px; left:1264px;" onClick="hideElements(); toggleElement('goontankstation');">
             <div class="marker-info" id="goontankstation">
               <a class="title">Go’on Tankstation</a>
               <a class="desc">Få tanket bilen op ved siden af det smukke nye parkeringspladsprojekt</a>
@@ -144,7 +144,7 @@
             </div>
           </div>
 
-          <div class="marker tra" style="top:470px; left:1180px;" onClick="toggleElement('lundeautovaerksted');">
+          <div class="marker tra" style="top:470px; left:1180px;" onClick="hideElements(); toggleElement('lundeautovaerksted');">
             <div class="marker-info" id="lundeautovaerksted">
               <a class="title">Lunde Autoværksted</a>
               <a class="desc">Medlem af kæden Autopartner, der kan klare alle former for reparationer</a>
@@ -152,7 +152,7 @@
             </div>
           </div>
 
-          <div class="marker tra vir" style="top:260px; left:1264px;" onClick="toggleElement('lundemaskincenter');">
+          <div class="marker tra vir" style="top:260px; left:1264px;" onClick="hideElements(); toggleElement('lundemaskincenter');">
             <div class="marker-info" id="lundemaskincenter">
               <a class="title">Lunde Maskincenter</a>
               <a class="desc">Smedeforretning med 12 ansatte, der har eksisteret i over 100 år og kan klare alt inde for maskiner</a>
@@ -160,7 +160,7 @@
             </div>
           </div>
 
-          <div class="marker tra vir" style="top:380px; left:1150px;" onClick="toggleElement('lundeentrogmaskinstation');">
+          <div class="marker tra vir" style="top:380px; left:1150px;" onClick="hideElements(); toggleElement('lundeentrogmaskinstation');">
             <div class="marker-info" id="lundeentrogmaskinstation">
               <a class="title">Lunde Entr. og Maskinstation</a>
               <a class="desc">Alt inde for landbrugs-,entreprenør-, og kloakarbejde samt vognmandskørsel</a>
@@ -168,7 +168,7 @@
             </div>
           </div>
 
-          <div class="marker ins" style="top:350px; left:1250px;" onClick="toggleElement('lundeskole');">
+          <div class="marker ins" style="top:350px; left:1250px;" onClick="hideElements(); toggleElement('lundeskole');">
             <div class="marker-info" id="lundeskole">
               <a class="title">Lunde Skole</a>
               <a class="desc">Den lokale skole med mange arrangementer, og et sted hvor man kender eleverne og lærerne</a>
@@ -176,7 +176,7 @@
             </div>
           </div>
 
-          <div class="marker ins" style="top:640px; left:1223px;" onClick="toggleElement('boernehave');">
+          <div class="marker ins" style="top:640px; left:1223px;" onClick="hideElements(); toggleElement('boernehave');">
             <div class="marker-info" id="boernehave">
               <a class="title">Børnehave</a>
               <a class="desc">Et trygt læringsmiljø for de mindste på en stor grund til leg og motoriske udfoldelse</a>
@@ -184,7 +184,7 @@
             </div>
           </div>
 
-          <div class="marker ins ple" style="top:530px; left:1150px;" onClick="toggleElement('plejehjem');">
+          <div class="marker ins ple" style="top:530px; left:1150px;" onClick="hideElements(); toggleElement('plejehjem');">
             <div class="marker-info" id="plejehjem">
               <a class="title">Plejehjem</a>
               <a class="desc">Aktivitetscentret Bavnbo - et trygt og roligt plejehjem med en historisk betydning for byen</a>
@@ -192,7 +192,7 @@
             </div>
           </div>
 
-          <div class="marker ins ple" style="top:547px; left:1145px;" onClick="toggleElement('hjemmehjaelp');">
+          <div class="marker ins ple" style="top:547px; left:1145px;" onClick="hideElements(); toggleElement('hjemmehjaelp');">
             <div class="marker-info" id="hjemmehjaelp">
               <a class="title">Hjemmehjælp</a>
               <a class="desc">Få den høje kvalitet af pleje fra Lunde plejehjem i dit eget hus</a>
@@ -200,7 +200,7 @@
             </div>
           </div>
 
-          <div class="marker ins vir" style="top:394px; left:1242px;" onClick="toggleElement('sparekassen');">
+          <div class="marker ins vir" style="top:394px; left:1242px;" onClick="hideElements(); toggleElement('sparekassen');">
             <div class="marker-info" id="sparekassen">
               <a class="title">Sparekassen</a>
               <a class="desc">Få personlig kontakt med din bankrådgiver hos Sparnebel. Her sættes der ansigt på kunderne</a>
@@ -208,7 +208,7 @@
             </div>
           </div>
 
-          <div class="marker ins" style="top:403px; left:1195px;" onClick="toggleElement('lundekirke');">
+          <div class="marker ins" style="top:403px; left:1195px;" onClick="hideElements(); toggleElement('lundekirke');">
             <div class="marker-info" id="lundekirke">
               <a class="title">Lunde Kirke</a>
               <a class="desc">Oprindeligt navngivet Sct. Stefans Kirke er en flot udsmukket kirke med lokal sognepræst og kirkekontor</a>
@@ -216,7 +216,7 @@
             </div>
           </div>
 
-          <div class="marker but" style="top:730px; left:1133px;" onClick="toggleElement('skhair');">
+          <div class="marker but" style="top:730px; left:1133px;" onClick="hideElements(); toggleElement('skhair');">
             <div class="marker-info" id="skhair">
               <a class="title">SK Hair Design Frisør</a>
               <a class="desc">Behagelig og personlig frisør, der har kunderne i fokus og holder sig opdateret på de nyeste trends</a>
@@ -224,7 +224,7 @@
             </div>
           </div>
 
-          <div class="marker but" style="top:760px; left:1104px;" onClick="toggleElement('kirkenskorshaer');">
+          <div class="marker but" style="top:760px; left:1104px;" onClick="hideElements(); toggleElement('kirkenskorshaer');">
             <div class="marker-info" id="kirkenskorshaer">
               <a class="title">Kirkens Korshær</a>
               <a class="desc">Den lokale genbrugsbutik, som hjælper alle der har behov for det</a>
@@ -232,7 +232,7 @@
             </div>
           </div>
 
-          <div class="marker spo" style="top:625px; left:1160px;" onClick="toggleElement('lundestadion');">
+          <div class="marker spo" style="top:625px; left:1160px;" onClick="hideElements(); toggleElement('lundestadion');">
             <div class="marker-info" id="lundestadion">
               <a class="title">Lunde Stadion</a>
               <a class="desc">Stadion med flere baner og mulighed for mange forskellige sportstyper</a>
@@ -240,7 +240,7 @@
             </div>
           </div>
 
-          <div class="marker spo" style="top:608px; left:1153px;" onClick="toggleElement('lundeboldklub');">
+          <div class="marker spo" style="top:608px; left:1153px;" onClick="hideElements(); toggleElement('lundeboldklub');">
             <div class="marker-info" id="lundeboldklub">
               <a class="title">Lunde Boldklub</a>
               <a class="desc">Boldklibben har to hold i turnering i seniorafdelingen, i ungdomsrækkerne samarbejders der med øvrige klubber i mange rækker</a>
@@ -248,7 +248,7 @@
             </div>
           </div>
 
-          <div class="marker spo" style="top:625px; left:1143px;" onClick="toggleElement('legeplads');">
+          <div class="marker spo" style="top:625px; left:1143px;" onClick="hideElements(); toggleElement('legeplads');">
             <div class="marker-info" id="legeplads">
               <a class="title">Legeplads/Multibane</a>
               <a class="desc">Ved Lunde Stadion er der en stor legeplads og multibane, som altid i gåafstand for de legeglade</a>
@@ -256,7 +256,7 @@
             </div>
           </div>
 
-          <div class="marker spo" style="top:750px; left:1223px;" onClick="toggleElement('kaelkebakke');">
+          <div class="marker spo" style="top:750px; left:1223px;" onClick="hideElements(); toggleElement('kaelkebakke');">
             <div class="marker-info" id="kaelkebakke">
               <a class="title">Kælkebakke</a>
               <a class="desc">Opført af frivillige i sikre naturlige omgivelser og beliggende i roligt familieområde</a>
@@ -264,7 +264,7 @@
             </div>
           </div>
 
-          <div class="marker spo vir" style="top:411px; left:1230px;" onClick="toggleElement('lundeforsamlingshus');">
+          <div class="marker spo vir" style="top:411px; left:1230px;" onClick="hideElements(); toggleElement('lundeforsamlingshus');">
             <div class="marker-info" id="lundeforsamlingshus">
               <a class="title">Lunde Forsamlingshus</a>
               <a class="desc">Med ca. 100 medlemmer og en bestyrelse på 5 personer står forsamligshuset klar til din næste fest</a>
@@ -272,7 +272,7 @@
             </div>
           </div>
 
-          <div class="marker vir" style="top:355px; left:1290px;" onClick="toggleElement('danishagro');">
+          <div class="marker vir" style="top:355px; left:1290px;" onClick="hideElements(); toggleElement('danishagro');">
             <div class="marker-info" id="danishagro">
               <a class="title">Danish Agro</a>
               <a class="desc">Regionalt salgskontor med driftsaktiviteter under samme tag</a>
@@ -280,7 +280,7 @@
             </div>
           </div>
 
-          <div class="marker vir" style="top:805px; left:1133px;" onClick="toggleElement('annebergslimtrae');">
+          <div class="marker vir" style="top:805px; left:1133px;" onClick="hideElements(); toggleElement('annebergslimtrae');">
             <div class="marker-info" id="annebergslimtrae">
               <a class="title">Annebergs Limtræ</a>
               <a class="desc">Kendt for den høje kvalitet af limtræ, bjælker, søjler og meget andet, hvor leveringssikkerheden er i højsædet</a>
@@ -288,7 +288,7 @@
             </div>
           </div>
 
-          <div class="marker vir" style="top:726px; left:1094px;" onClick="toggleElement('lundevvs');">
+          <div class="marker vir" style="top:726px; left:1094px;" onClick="hideElements(); toggleElement('lundevvs');">
             <div class="marker-info" id="lundevvs">
               <a class="title">Lunde VVS</a>
               <a class="desc">Den lokale vvs installatør rykker ud og hjælper med alle de problemer der kunne opstå</a>
@@ -572,13 +572,14 @@
   <script>
     function toggleElement(id) {
       let x = document.getElementById(id);
-      let y = document.getElementsByClassName("marker-info");
-      x.style.display = x.style.display === 'inline-block' ? (
-        'none'
-      ) : (
-        y.forEach(y.style.display = 'none'),
-        'inline-block'
-      );
+      x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
+    }
+
+    function hideElements() {
+      let x = document.getElementsByClassName('marker-info');
+      for (let i = 0; i < x.length; i++){
+        x[i].style.display = 'none';
+      }
     }
   </script>
 

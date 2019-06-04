@@ -101,7 +101,7 @@ Jernbanen åbnede den 13. marts 1903.
   </section>
   <section>
   	<h3 class="text-center">Kort over Lunde</h3>
-
+<div class="mapcontainer">
   	<div class="canvas no-select dragscroll" id="viewer">
 
   	  <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
@@ -349,7 +349,7 @@ Jernbanen åbnede den 13. marts 1903.
 
   	  </div>
   	</div>
-
+</div>
   </section>
 
   <script>

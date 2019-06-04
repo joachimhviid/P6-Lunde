@@ -276,14 +276,25 @@ section .tile {
   margin-bottom: 30px;
 }
 
-main .canvas {
-  display: inline-block;
+.mapcontainer {
+  display: block;
   width: 100%;
-  background: #F7F7F7;
-  width: 100%;
+  max-width: 1920px;
   height: 520px;
   overflow: hidden;
   position: relative;
+  margin: auto;
+}
+
+main .canvas {
+  display: block;
+  background: #F7F7F7;
+  width: 100%;
+  max-width: 1920px;
+  height: 520px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
 }
 
 main .canvas .map {

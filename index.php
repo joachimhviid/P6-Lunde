@@ -88,7 +88,7 @@
 
     <section>
       <h3 class="text-center">Gå på opdagelse</h3>
-
+<div class="mapcontainer">
       <div class="canvas no-select dragscroll" id="viewer">
 
         <img class="map" src="images/mapVector.svg" alt="Lunde bykort" />
@@ -294,7 +294,6 @@
         </div>
 
       </div>
-
       <div class="checkbox-contain" id="checkboxes">
         <a class="drop-button" onClick="toggleElement('mapDrop')">Vælg visning<img src="images/dropdown_arrow.png" alt="arrow" /></a>
         <div class="drop-content" id="mapDrop">
@@ -336,6 +335,7 @@
 
         </div>
       </div>
+</div>
 
     </section>
 

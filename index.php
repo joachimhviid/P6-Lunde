@@ -572,7 +572,13 @@
   <script>
     function toggleElement(id) {
       let x = document.getElementById(id);
-      x.style.display = x.style.display === 'inline-block' ? 'none' : 'inline-block';
+      let y = document.getElementsByClassName("marker-info");
+      x.style.display = x.style.display === 'inline-block' ? (
+        'none'
+      ) : (
+        y.forEach(y.style.display = 'none'),
+        'inline-block'
+      );
     }
   </script>
 
